@@ -8,9 +8,9 @@
 
 ### HTML elements
 
-- [Adding HTML elements](/m2-front-end-101/s1-html-tags/index.html)
-- [CV](./m2-front-end-101/s1-html-tags/cv.html)
-- [Biography webpage](./m2-front-end-101/s1-html-tags/leonardo-da-vinci.html)
+- [Adding HTML elements](/m2-front-end-101/s1-html-elements/index.html)
+- [CV](./m2-front-end-101/s1-html-elements/cv.html)
+- [Biography webpage](./m2-front-end-101/s1-html-elements/leonardo-da-vinci.html)
 
 ---
 
