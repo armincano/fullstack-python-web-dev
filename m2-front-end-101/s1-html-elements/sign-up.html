@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign up</title>
+		<style>
+			input {
+				display: block;
+				margin-bottom: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Regístrate</h1>
+		<form action="sign-up.html" method="get">
+			<input type="text" name="user-name" placeholder="Nombre" required />
+
+			<input type="text" name="user-surname" placeholder="Apellido" required />
+
+			<input type="email" name="user-email" placeholder="Email" required />
+
+			<input
+				type="password"
+				name="user-password"
+				placeholder="Contraseña"
+				required
+			/>
+
+			<button type="submit">Regístrate</button>
+		</form>
+		<br />
+		<p>¿Ya eres miembro? <strong>Inicia tu sesión</strong></p>
+	</body>
+</html>
