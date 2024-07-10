@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Clínica Valentine - Reserva tu hora</title>
+	</head>
+	<body>
+		<h1>Reserva tu hora</h1>
+		<form action="./received-page-reserva-hora-medica.html" method="get">
+			<fieldset>
+				<legend>Información personal</legend>
+				<label for="user-name">Nombre</label>
+				<br />
+				<input type="text" id="user-name" name="user-name" required />
+				<br />
+
+				<label for="user-address">Dirección</label>
+				<br />
+				<input type="text" id="user-address" name="user-address" required />
+				<br />
+
+				<label for="user-email">Correo</label>
+				<br />
+				<input type="email" id="user-email" name="user-email" required />
+				<br />
+			</fieldset>
+
+			<fieldset>
+				<legend>Información hora médica</legend>
+
+				<label for="especialidad-medica">Especialidad médica</label>
+				<br />
+				<select name="especialidad-medica" id="especialidad-medica" required>
+                    <option value="" disabled selected>Seleccione una especialidad</option>
+					<option value="medicina-interna">Medicina Interna</option>
+					<option value="medicina-general">Medicina General</option>
+					<option value="traumatologia">Traumatología</option>
+					<option value="nutricionista">Nutricionaista</option>
+				</select>
+				<br />
+
+				<label for="fecha">Fecha</label>
+				<br />
+				<input type="date" name="fecha" id="fecha" required />
+				<br />
+
+				<label for="hora">Hora</label>
+				<br />
+				<input type="time" name="hora" id="hora" required />
+				<br />
+			</fieldset>
+
+			<button type="submit">Confirmar</button>
+		</form>
+	</body>
+</html>

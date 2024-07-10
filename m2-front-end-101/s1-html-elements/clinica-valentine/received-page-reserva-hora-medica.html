@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Clínica Valentine - Estado de tu reserva</title>
+	</head>
+	<body>
+		<div
+			style="
+				border: 25px solid;
+				border-image: url('https://img.freepik.com/free-vector/hand-painted-abstract-painting-pattern-design_23-2148989806.jpg?w=1380&t=st=1720571733~exp=1720572333~hmac=2712e951e4be1c05283969cbfcd58c6e4da47222dfe41445e4fcf6c9dbc078ac')
+					30 round;
+				padding: 3% 10%;
+				text-align: center;
+			"
+		>
+			<h1>¡Tu hora fue reservada!</h1>
+			<hr />
+			<p>Tus datos son:</p>
+			<ul></ul>
+		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", (event) => {
+				const params = new URLSearchParams(window.location.search);
+				const userName = params.get("user-name");
+				const userAddress = params.get("user-address");
+				const userEmail = params.get("user-email");
+				const especialidadMedica = params.get("especialidad-medica");
+				const fecha = params.get("fecha");
+				const hora = params.get("hora");
+				if (userName) {
+					// Assuming you have an <ul> element for displaying the user data
+					document.querySelector("ul").innerHTML = `
+            <li>Nombre: ${userName}</li>
+            <li>Dirección: ${userAddress}</li>
+            <li>Correo: ${userEmail}</li>
+            <li>Especialidad Médica: ${especialidadMedica}</li>
+            <li>Fecha: ${fecha}</li>
+            <li>Hora: ${hora}</li>
+          `;
+				} else {
+					document.querySelector("h1").innerHTML =
+						"No se han recibido datos de reserva.";
+					document.querySelector("p").innerHTML =
+						"Intenta más tarde o comunícate con soporte.";
+				}
+			});
+		</script>
+	</body>
+</html>
