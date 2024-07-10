@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style></style>
+	</head>
+
+	<body>
+		<h1>Pedidos</h1>
+		<p>
+			Selecciona el producto que deseas, llena los datos del comprador y realiza
+			tu compra.
+		</p>
+
+		<h2>Selección del producto</h2>
+		<form action="index.html" method="get">
+			<fieldset>
+				<label for="camisa-s">Camisa S</label>
+				<input type="radio" name="producto" id="camisa-s" />
+				<br />
+				<label for="camisa-l">Camisa L</label>
+				<input type="radio" name="producto" id="camisa-l" />
+				<br />
+				<label for="zapatilla-41">Zapatilla 41</label>
+				<input type="radio" name="producto" id="zapatilla-41" />
+				<br />
+				<label for="color-producto">Color producto</label>
+				<input
+					type="color"
+					name="color-producto"
+					id="color-producto"
+					value="#ff0000"
+				/>
+				<br />
+				<label for="cantidad-producto">Cantidad producto</label>
+				<input
+					type="number"
+					max="10"
+					min="1"
+					name="cantidad-producto"
+					id="cantidad-producto"
+				/>
+			</fieldset>
+
+			<h2>Código de descuento</h2>
+			<fieldset>
+				<label for="codigo-descuento">Código descuento</label>
+				<input type="text" name="codigo-descuento" id="codigo-descuento" />
+			</fieldset>
+
+			<h2>Datos Comprador</h2>
+			<fieldset>
+				<label for="comprador-nombre">Nombre</label>
+				<input type="text" name="comprador-nombre" id="comprador-nombre" />
+				<br />
+				<label for="comprador-apellido">Apellido</label>
+				<input type="text" name="comprador-apellido" id="comprador-apellido" />
+				<br />
+				<label for="comprador-run">RUN</label>
+				<input type="text" name="comprador-run" id="comprador-run" />
+			</fieldset>
+
+			<h2>Datos del envío</h2>
+			<fieldset>
+				<label for="usar-datos-comprador"
+					>¿Quieres usar los mismos datos del comprador?</label
+				>
+				<input
+					type="checkbox"
+					name="usar-datos-comprador"
+					id="usar-datos-comprador"
+				/>
+				<br />
+
+				<label for="envio-direccion">Dirección</label>
+				<input type="text" name="envio-direccion" id="envio-direccion" />
+				<br />
+				<label for="envio-comuna">Comuna</label>
+				<select name="envio-comuna" id="envio-comuna">
+					<option value="" disabled selected>Elige la comuna</option>
+					<option value="santiago">Santiago</option>
+					<option value="providencia">Providencia</option>
+					<option value="las-condes">Las Condes</option>
+				</select>
+				<br />
+				<label for="envio-fecha">Fecha del envío</label>
+				<input type="date" name="envio-fecha" id="envio-fecha" />
+				<br />
+				<label for="envio-servicio">Servicio de entregas</label>
+				<select name="envio-servicio" id="envio-servicio">
+					<option value="" disabled selected>Elige el servicio</option>
+					<option value="santiago">Chilexpres</option>
+					<option value="providencia">Correos Chile</option>
+					<option value="las-condes">Starken</option>
+				</select>
+			</fieldset>
+			<br />
+			<button type="submit">Realizar compra</button>
+		</form>
+	</body>
+</html>

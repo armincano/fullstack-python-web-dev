@@ -11,7 +11,7 @@
 - [Adding HTML elements](/m2-front-end-101/s1-html-elements/index.html)
 - [CV](./m2-front-end-101/s1-html-elements/cv.html)
 - [Biography webpage](./m2-front-end-101/s1-html-elements/leonardo-da-vinci.html)
-- [Book medical appointment](/m2-front-end-101/s1-html-elements/clinica-valentine/form-reserva-hora-medica.html)
+- [Book medical appointment](/m2-front-end-101/s1-html-elements/book-medical-appointment/form-reserva-hora-medica.html)
 
 ---
 
