@@ -1,0 +1,62 @@
+th{
+    font-weight: 100;
+    text-align: start;
+}
+
+table{
+    border-style: ridge;
+    border-color: white;
+}
+
+.red{
+    background-color: red;
+}
+
+.white{
+    background-color: white;
+}
+
+.green{
+    background-color: green;
+}
+
+.gray{
+    background-color: gray;
+}
+
+.brown{
+    background-color: brown;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.violet{
+    background-color: violet;
+}
+
+.pink{
+    background-color: pink;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.turquoise{
+    background-color: turquoise;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
