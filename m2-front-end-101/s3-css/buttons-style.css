@@ -1,0 +1,31 @@
+html {
+	font-size: 14px;
+}
+
+body {
+	text-align: center;
+}
+
+button {
+	color: #fff;
+	padding: 8px 18px;
+	margin: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+.primary-btn {
+	background-color: #3498db;
+}
+
+.secondary-btn {
+	background-color: #2ecc71;
+}
+
+.success-btn {
+	background-color: #27ae60;
+}
+
+.danger-btn {
+	background-color: #e74c3c;
+}
