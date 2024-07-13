@@ -15,15 +15,15 @@
 <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" height="25" alt="bootstrap badge">
 <h3>HTML</h3>
 <ul>
-    <li><a href="/m2-front-end-101/s1-html-elements/index.html">Adding HTML elements</a></li>
-    <li><a href="/m2-front-end-101/s1-html-elements/cv.html">CV</a></li>
-    <li><a href="/m2-front-end-101/s1-html-elements/leonardo-da-vinci.html">Biography webpage</a></li>
-    <li><a href="/m2-front-end-101/s1-html-elements/book-medical-appointment/form-reserva-hora-medica.html">Book medical appointment</a></li>
-    <li><a href="/m2-front-end-101/s2-html-semantics/index.html">Content sectioning semantics</a></li>
+    <li><a href="./m2-front-end-101/s1-html-elements/index.html">Adding HTML elements</a></li>
+    <li><a href="./m2-front-end-101/s1-html-elements/cv.html">CV</a></li>
+    <li><a href="./m2-front-end-101/s1-html-elements/leonardo-da-vinci.html">Biography webpage</a></li>
+    <li><a href="./m2-front-end-101/s1-html-elements/book-medical-appointment/form-reserva-hora-medica.html">Book medical appointment</a></li>
+    <li><a href="./m2-front-end-101/s2-html-semantics/index.html">Content sectioning semantics</a></li>
 </ul>
 <h3>CSS + Responsive Design & Mobile First</h3>
     <ul>
-        <li><a href="/m2-front-end-101/s4-responsive-and-mobile-first/responsive-mobile-first-img-gallery/index.html">Cats gallery using flexbox and media queries</a></li>
+        <li><a href="./m2-front-end-101/s4-responsive-and-mobile-first/responsive-mobile-first-img-gallery/index.html">Cats gallery using flexbox and media queries</a></li>
     </ul>
 
 <hr>
