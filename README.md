@@ -1,9 +1,3 @@
-<style>
-    body {
-        font-family: 'Arial', sans-serif;
-    }
-</style>
-
 <div style="border: 15px solid; border-image: url('https://cdn.osxdaily.com/wp-content/uploads/2017/12/classic-mac-os-tile-wallpapers-7.png') 30 round; padding: 3% 10%;">
 
 # Challenges and Assignments<br>from a Python Bootcamp Student
