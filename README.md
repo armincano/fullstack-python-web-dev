@@ -18,4 +18,5 @@ Click to see the code in action 👉 [LIVE DEMO](https://armincano.github.io/ful
 
 ### CSS   Responsive Design & Mobile First
 
+- [Kid Pix 2.5 Users Manual. Grid, flexbox and media queries](./m2-front-end-101/s4-responsive-and-mobile-first/mobile-first-grid-landing-page/index.html)
 - [Cats gallery using flexbox and media queries](./m2-front-end-101/s4-responsive-and-mobile-first/responsive-mobile-first-img-gallery/index.html)

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kid Pix 2</title>
+		<link rel="stylesheet" href="assets/styles.css" />
+	</head>
+	<body>
+		<header
+			id="homeHeader"
+			class="p-1 col-xs-12 align-vertically-horizontally-center"
+		>
+			<nav class="fixed-right col-xs-9">
+				<button id="navToggle" class="btn-no-decoration col-xs-2">
+					<img
+						src="./assets/img/kid-pix-icon.png"
+						alt="nav button"
+						width="100%"
+					/>
+				</button>
+				<ul id="mainNav" class="hidden nav nav-border">
+					<li><a href="#homeHeader">Home</a></li>
+					<hr />
+					<li><a href="#wackyPencil">Wacky Pencil</a></li>
+					<hr />
+					<li><a href="#eraser">Eraser</a></li>
+					<hr />
+					<li><a href="#requirements">Requirements</a></li>
+				</ul>
+			</nav>
+
+			<div class="air-top-20"></div>
+
+			<img
+				src="./assets/img/kid-pix-1.png"
+				alt="kid pix logo"
+				class="col-xs-9"
+			/>
+			<div class="m-1">
+				<h1>Users Guide</h1>
+				<p>
+					You don't really need to study this manual to operate the program.<br />In
+					fact, lots of the fun with Kid Pix 2 comes from discovering for
+					yourself what the tools and their options do.
+				</p>
+			</div>
+		</header>
+
+		<main>
+			<section id="wackyPencil" class="p-1 col-xs-12 align-horizontally-center">
+				<div class="air-top-10"></div>
+				<div class="grid-container">
+					<div class="grid-item item-a">
+						<img
+							src="./assets/img/wacky-pencil-icon.png"
+							alt="wacky pencil icon"
+							width="70%"
+						/>
+					</div>
+					<div class="grid-item item-b">
+						<h2>Wacky Pencil</h2>
+					</div>
+					<div class="grid-item item-c">
+						<p>
+							The Wacky Pencil draws free-form lines. Select line widths, line
+							styles, and line patterns from the Options bar.
+						</p>
+					</div>
+				</div>
+
+				<div class="air-top-5"></div>
+
+				<img
+					src="./assets/img/wacky-pencil-art.png"
+					alt="wacky pencil in action"
+					class="col-xs-11"
+				/>
+
+				<div class="air-top-5"></div>
+
+				<img
+					src="./assets/img/wacky-pencil-toolbar.png"
+					alt="wacky pencil toolbar"
+					class="col-xs-11"
+				/>
+
+				<div class="air-top-5"></div>
+
+				<div class="flexbox-rectangle">
+					<img
+						src="./assets/img/cross-icon.png"
+						alt="cross icon"
+						class="col-xs-3 p-1"
+					/>
+					<p class="col-xs-9">
+						The option produces a tint effect, like a water color wash, that's
+						great for coloring Kid Pix 2 "hidden pictures."
+					</p>
+					<img
+						src="./assets/img/secret-icon.png"
+						alt="cross icon"
+						class="col-xs-3 p-1"
+					/>
+					<p class="col-xs-9">
+						The option cycles through a color palette while it draws, giving a
+						"rainbow" effect.
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<script>
+			document
+				.getElementById("navToggle")
+				.addEventListener("click", function () {
+					document.getElementById("mainNav").classList.toggle("hidden");
+				});
+		</script>
+	</body>
+</html>
