@@ -29,6 +29,17 @@
 }
 /* !SECTION Color Pallete */
 
+/* SECTION CSS variables for common values */
+:root {
+	--padding-small: 0.8rem;
+	--padding-large: 2rem;
+	--margin-small: 0.8rem;
+	--top-space-small: 5%;
+	--top-space-medium: 10%;
+	--top-space-large: 20%;
+}
+/* !SECTION CSS variables for common values */
+
 /* SECTION Structural */
 flex {
 	display: flex;
@@ -53,8 +64,9 @@ body {
 
 h1 {
 	font-family: "Chicago", sans-serif;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	color: var(--primary-color);
+	line-height: 1.8rem;
 }
 
 h2 {
@@ -74,16 +86,17 @@ a {
 	font-size: 1rem;
 }
 
-.grid-item h2, .grid-item p{
+.grid-item h2,
+.grid-item p {
 	margin: 0.3rem;
 	text-align: start;
 }
 
-.grid-item img{
+.grid-item img {
 	text-align: start;
 }
 
-.flexbox-rectangle p{
+.flexbox-rectangle p {
 	text-align: start;
 	padding: 0.7rem;
 	margin: 0;
@@ -130,27 +143,27 @@ a {
 }
 
 .air-top-20 {
-	margin-top: 20%;
+	margin-top: var(--top-space-large);
 }
 
 .air-top-10 {
-	margin-top: 10%;
+	margin-top: var(--top-space-medium);
 }
 
 .air-top-5 {
-	margin-top: 5%;
+	margin-top: var(--top-space-small);
 }
 
 .p-1 {
-	padding: 0.8rem;
+	padding: var(--padding-small);
 }
 
 .p-2 {
-	padding: 2rem;
+	padding: var(--padding-large);
 }
 
 .m-1 {
-	margin: 0.8rem;
+	margin: var(--margin-small);
 }
 
 .btn-no-decoration {
@@ -165,13 +178,14 @@ a {
 #header {
 	background-color: var(--bg1-color);
 	text-align: center;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .grid-header-container {
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto auto auto;
+	gap: 5px;
 	grid-template-areas:
 		"nav"
 		"logo"
@@ -221,17 +235,20 @@ nav ul {
 
 .grid-container {
 	display: grid;
-	grid-template-columns: 25% auto;
+	grid-template-columns: 20% auto;
 	grid-template-rows: auto auto auto auto;
+	gap: 5px; /* Adjusts the gap between grid items */
 	grid-template-areas:
 		"tool-icon		tool-title"
-		"tool-icon		tool-description"
+		".				tool-description"
 		"tool-action	tool-action"
 		"tool-options	tool-options";
 }
 
 .item-a {
 	grid-area: tool-icon;
+	justify-self: end; /* Horizontally centers the item to the end (bottom) of its grid area  */
+	align-self: end; /* Vertically align the item within its grid area */
 }
 .item-b {
 	grid-area: tool-title;
@@ -247,7 +264,7 @@ nav ul {
 	grid-area: tool-options;
 }
 
-.wacky-tv{
+.wacky-tv {
 	display: none;
 	width: 100%;
 }
@@ -262,20 +279,11 @@ nav ul {
 	}
 
 	.air-top-20 {
-		margin-top: 2%;
-	}
-	
-	.air-top-10 {
-		margin-top: 1%;
+		margin-top: 6%;
 	}
 
-	.grid-container {
-		grid-template-columns: 10% auto auto;
-		grid-template-rows: auto auto auto;
-		grid-template-areas:
-			"tool-icon 		tool-title			tool-options"
-			"tool-icon 		tool-description	tool-options"
-			"tool-action 	tool-action			tool-options";
+	.air-top-10 {
+		margin-top: 4%;
 	}
 
 	.grid-header-container {
@@ -286,24 +294,58 @@ nav ul {
 			"logo			description";
 	}
 
-	.item-header-c{
+	.grid-container {
+		grid-template-columns: 10% auto auto;
+		grid-template-rows: auto auto auto;
+		grid-template-areas:
+			"tool-icon 		tool-title			tool-options"
+			".				tool-description	tool-options"
+			"tool-action 	tool-action			tool-options";
+	}
+
+	.item-header-c {
 		margin: auto;
 	}
 
 	.p-1 {
-		padding: 0.6rem;
+		padding: 0.4rem;
 	}
-	
+
 	.p-2 {
 		padding: 1.4rem;
 	}
+
+	.fixed-right {
+		position:absolute;
+		top: 0%; /* Aligns the top of the nav with the top of the viewport */
+		left: 0%; /* Aligns the nav to the left side of the viewport */
+	}
+
+	#mainNav {
+		height: 60px;
+		display: flex;
+		flex-direction: row; /* This is default and can be omitted */
+		gap: 10px; /* Adjust the space between items */
+		align-items: center; /* Align items vertically in the center, if needed */
+		padding: 0 90px;
+	}
+
+	#mainNav hr {
+		display: inline-block; /* or 'block', depending on layout needs */
+		width: 1px; /* Makes the line thin */
+		height: 50px; /* Adjust based on desired length */
+		margin: 0 auto; /* Centers the line horizontally if 'display' is 'block' */
+		background-color: currentColor; /* Ensures the line uses the text color */
+		border: none; /* Removes the default border to use background-color */
+	}
+
 
 	#navToggle {
 		display: none;
 	}
 
-	.wacky-tv{
-		display:block;
+	.wacky-tv {
+		display: block;
 	}
 
 	.col-xl-12 {
@@ -360,18 +402,9 @@ nav ul {
 	.air-top-20 {
 		margin-top: 2%;
 	}
-	
+
 	.air-top-10 {
 		margin-top: 1%;
-	}
-
-	.grid-container {
-		grid-template-columns: 10% auto auto;
-		grid-template-rows: auto auto auto;
-		grid-template-areas:
-			"tool-icon 		tool-title			tool-options"
-			"tool-icon 		tool-description	tool-options"
-			"tool-action 	tool-action			tool-options";
 	}
 
 	.grid-header-container {
@@ -382,24 +415,57 @@ nav ul {
 			"logo			description";
 	}
 
-	.item-header-c{
+	.item-header-c {
 		margin: auto;
 	}
 
-	.p-1 {
-		padding: 0.6rem;
+	.grid-container {
+		grid-template-columns: 10% auto auto;
+		grid-template-rows: auto auto auto;
+		grid-template-areas:
+			"tool-icon 		tool-title			tool-options"
+			".				tool-description	tool-options"
+			"tool-action 	tool-action			tool-options";
 	}
-	
+
+	.p-1 {
+		padding: 0.8rem;
+	}
+
 	.p-2 {
-		padding: 1.4rem;
+		padding: 1.8rem;
+	}
+
+	.fixed-right {
+		position:absolute;
+		top: 0%; /* Aligns the top of the nav with the top of the viewport */
+		left: 0%; /* Aligns the nav to the left side of the viewport */
+	}
+
+	#mainNav {
+		height: 60px;
+		display: flex;
+		flex-direction: row; /* This is default and can be omitted */
+		gap: 10px; /* Adjust the space between items */
+		align-items: center; /* Align items vertically in the center, if needed */
+		padding: 0 90px;
+	}
+
+	#mainNav hr {
+		display: inline-block; /* or 'block', depending on layout needs */
+		width: 1px; /* Makes the line thin */
+		height: 50px; /* Adjust based on desired length */
+		margin: 0 auto; /* Centers the line horizontally if 'display' is 'block' */
+		background-color: currentColor; /* Ensures the line uses the text color */
+		border: none; /* Removes the default border to use background-color */
 	}
 
 	#navToggle {
 		display: none;
 	}
 
-	.wacky-tv{
-		display:block;
+	.wacky-tv {
+		display: block;
 	}
 
 	.col-lg-12 {
@@ -453,12 +519,17 @@ nav ul {
 
 /* ANCHOR Medium (>=768px) */
 @media (min-width: 768px) and (max-width: 991px) {
-	.p-1 {
-		padding: 1.5rem;
+	html {
+		font-size: 26px;
 	}
-	
+
+
+	.p-1 {
+		padding: 1.6rem;
+	}
+
 	.p-2 {
-		padding: 2.8rem;
+		padding: 3.8rem;
 	}
 
 	.col-md-12 {

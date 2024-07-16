@@ -1,4 +1,4 @@
-# Challenges and Assignments<br>from a Python Bootcamp Student
+# Challenges and Assignments from a Python Bootcamp Student
 
 Click to see the code in action 👉 [LIVE DEMO](https://armincano.github.io/fullstack-python-web-dev/) 👀
 
