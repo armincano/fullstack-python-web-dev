@@ -22,3 +22,5 @@ Click to see the code in action 👉 [LIVE DEMO](https://armincano.github.io/ful
 - [Cats gallery. Responsive design using flexbox and media queries](./m2-front-end-101/s4-responsive-and-mobile-first/responsive-img-gallery/index.html)
 
 ### Bootstrap
+
+- [Cards and Navbar components](./m2-front-end-101/s5-s6-bootstrap/navbar-cards/navbar-cards.html)

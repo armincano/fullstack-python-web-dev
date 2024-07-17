@@ -1,0 +1,8 @@
+h1 {
+    font-family: 'Georgia', serif; /* Example: Change to your desired font */
+    font-size: 1.8rem;
+}
+
+.card{
+    height: 100%;
+}
