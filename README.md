@@ -16,7 +16,9 @@ Click to see the code in action 👉 [LIVE DEMO](https://armincano.github.io/ful
 - [Book medical appointment](./m2-front-end-101/s1-html-elements/book-medical-appointment/form-reserva-hora-medica.html)
 - [Content sectioning semantics](./m2-front-end-101/s2-html-semantics/index.html)
 
-### CSS   Responsive Design & Mobile First
+### CSS + Responsive Design & Mobile First
 
-- [Kid Pix 2.5 Users Manual. Grid, flexbox and media queries](./m2-front-end-101/s4-responsive-and-mobile-first/mobile-first-grid-landing-page/index.html)
-- [Cats gallery using flexbox and media queries](./m2-front-end-101/s4-responsive-and-mobile-first/responsive-mobile-first-img-gallery/index.html)
+- [Users Manual for Kid Pix. Responsive & Mobile first design](./m2-front-end-101/s4-responsive-and-mobile-first/mobile-first-kid-pix-users-manual/index.html)
+- [Cats gallery. Responsive design using flexbox and media queries](./m2-front-end-101/s4-responsive-and-mobile-first/responsive-img-gallery/index.html)
+
+### Bootstrap
