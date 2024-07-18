@@ -264,7 +264,15 @@ nav ul {
 	grid-area: tool-options;
 }
 
-.wacky-tv {
+.img-grid-description {
+	width: 44px;
+}
+
+.img-grid-icon {
+	width: 30px;
+}
+
+.img-hidden {
 	display: none;
 	width: 100%;
 }
@@ -344,7 +352,7 @@ nav ul {
 		display: none;
 	}
 
-	.wacky-tv {
+	.img-hidden {
 		display: block;
 	}
 
@@ -464,7 +472,7 @@ nav ul {
 		display: none;
 	}
 
-	.wacky-tv {
+	.img-hidden {
 		display: block;
 	}
 
