@@ -23,4 +23,5 @@ Click to see the code in action 👉 [LIVE DEMO](https://armincano.github.io/ful
 
 ### Bootstrap
 
+- [Form component](./m2-front-end-101/s5-s6-bootstrap/form/form.html)
 - [Cards and Navbar components](./m2-front-end-101/s5-s6-bootstrap/navbar-cards/navbar-cards.html)
