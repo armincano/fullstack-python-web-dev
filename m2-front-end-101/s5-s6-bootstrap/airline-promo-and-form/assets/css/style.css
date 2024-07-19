@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap");
+
+.lexend-exa-regular {
+	font-family: "Lexend Exa", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.gap-custom-1 {
+	gap: 10px;
+}
+
+.gap-custom-2 {
+	gap: 20px;
+}
+
+.scrollable-container {
+	overflow-x: auto; /* Enable horizontal scrolling */
+	white-space: nowrap; /* Prevent wrapping of child elements */
+}
+
+.gap-container-1 {
+	display: flex; /* Or display: grid; depending on your layout needs */
+	flex-direction: column; /* Use row for a horizontal layout */
+	gap: 10px; /* Adjust the gap size as needed */
+}
+
+.gap-container-2 {
+	display: flex; /* Or display: grid; depending on your layout needs */
+	flex-direction: column; /* Use row for a horizontal layout */
+	gap: 20px; /* Adjust the gap size as needed */
+}
+
+.select-custom {
+	border: none; /* Change border color */
+	background-color: transparent;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+	color: #ffffff !important; /* Use !important to override Bootstrap's styles if necessary */
+}
+
+.navbar-toggler{
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: none !important; /* Remove the default icon */
+}
+
+.navbar-toggler-icon::before {
+    content: "\2630"; /* Unicode character for hamburger icon */
+    font-size: 25px; /* Adjust size as needed */
+    color: #fff; /* Change to your desired color */
+}
+
+.navbar-brand{
+    font-family: "Lexend Exa";
+    font-size: 18px;
+}
+
+.summer-card-body {
+	/* background-color: rgb(220, 237, 186); */
+	/* background-color: #fbe59d; */
+	background-color: #d9f2fc;
+}
+
+.summer-card-footer {
+	color: white;
+	/* background-color: rgb(92, 122, 31); */
+	/* background-color: #973d02; */
+	background-color: #1e6892;
+}

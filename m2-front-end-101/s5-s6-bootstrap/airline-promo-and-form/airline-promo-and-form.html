@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AeroVia Express - Promo</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+
+        <header>
+            
+            <nav class="navbar navbar-expand-lg bg-primary custom-navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/flight.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        AeroVia Express
+                      </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Ofertas y destinos
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Ofertas de vuelo</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Destinos</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Mis viajes
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Administrar tus viajes</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Check-in</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Centro de ayuda</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Estado de vuelo</a>
+                      </li>
+                     
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <button class="btn btn-light" type="submit">Iniciar sesión</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+		<main class="gap-container-2">
+			<section>
+				<div class="container col-md-8 col-lg-6 pt-3">
+					<div class="card summer-card summer-card-body">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="card-body pe-3">
+									<span>Acumula millas</span>
+									<h3 class="card-text">
+										Vuela por Chile y Sudamérica con hasta 40% de descuento.
+									</h3>
+									<p class="card-text">
+										<small class="text-body-secondary"
+											><a
+												class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+												href="#"
+											>
+												Comprar un paquete
+											</a></small
+										>
+									</p>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<img
+									src="./assets/img/polynesia.jpg"
+									class="img-fluid object-fit-cover rounded-top h-100"
+									alt="..."
+								/>
+							</div>
+						</div>
+						<div class="card-footer summer-card-footer"></div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div
+					class="container gap-container-2 border rounded rounded-3 shadow p-3"
+				>
+					<div class="container scrollable-container">
+						<div class="d-flex gap-custom-1">
+							<button type="button" class="btn btn-primary">Vuelos</button>
+							<button type="button" class="btn btn-primary">Paquetes</button>
+							<button type="button" class="btn btn-primary">Hoteles</button>
+							<button type="button" class="btn btn-primary">Autos</button>
+							<button type="button" class="btn btn-primary">Seguros</button>
+							<button type="button" class="btn btn-primary">Upgrade</button>
+						</div>
+					</div>
+					<div class="container">
+						<div class="d-inline-flex gap-custom-2 mb-3">
+							<select class="form-select select-custom" id="tripMode">
+								<option selected value="roundTrip">Ida y Vuelta</option>
+								<option value="oneWay">Solo ida</option>
+							</select>
+
+							<select class="form-select select-custom" id="fare">
+								<option selected value="economy">Economy</option>
+								<option value="premiumEconomy">Premium Economy</option>
+								<option value="premiumBusiness">Premium Business</option>
+							</select>
+
+							<select class="form-select select-custom" id="passenger">
+								<option selected disabled value="">1 pasajero</option>
+								<option value="adults">Adultos</option>
+								<option value="children">Niños</option>
+								<option value="babies">Bebés</option>
+							</select>
+						</div>
+
+						<form action="" class="row g-3" id="flightForm">
+							<div class="col-md-2">
+								<input
+									type="text"
+									class="form-control"
+									id="departureFlight"
+									placeholder="Origen"
+									required
+								/>
+							</div>
+
+							<div class="col-md-2">
+								<input
+									type="text"
+									class="form-control"
+									id="destinationFlight"
+									placeholder="Destino"
+									required
+								/>
+							</div>
+
+							<div class="col-md-6">
+								<div class="input-group">
+									<span class="input-group-text">Ida</span>
+									<input
+										type="text"
+										class="form-control"
+										id="departureDate"
+										placeholder="Fecha"
+										required
+									/>
+
+									<span class="input-group-text">Vuelta</span>
+									<input
+										type="text"
+										class="form-control"
+										id="returnDate"
+										placeholder="Fecha"
+										required
+									/>
+								</div>
+							</div>
+
+							<div class="col-md-2">
+								<button type="submit" class="btn btn-primary">Solicitar</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
