@@ -7,6 +7,10 @@ Click to see the code in action 👉 [LIVE DEMO](https://armincano.github.io/ful
 ![HTML Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS Badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JavaScrip Badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![VSCode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 
 ### HTML
 
@@ -29,4 +33,6 @@ Click to see the code in action 👉 [LIVE DEMO](https://armincano.github.io/ful
 
 ### JavaScript
 
--[Compare numbers](./m2-front-end-101/s7-s8-javascript/browser-console/compare-numbers.html)
+- [Send doubts and navigate for a menu](./m2-front-end-101/s7-s8-javascript/browser-console/conditional-prompt/conditional-prompt.html)
+- [Calculate the total, VAT and discount](./m2-front-end-101/s7-s8-javascript/browser-console/calc-total-and-vat-and-discount/calc-total-and-vat-and-discount.html)
+- [Compare numbers](./m2-front-end-101/s7-s8-javascript/browser-console/compare-numbers.html)

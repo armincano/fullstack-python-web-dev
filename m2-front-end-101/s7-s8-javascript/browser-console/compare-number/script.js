@@ -2,11 +2,11 @@ const getUserInput = (message) => {
     let userInput;
     do {
         userInput = prompt(message);
-        if (userInput === null) {
+        if (userInput === null) { //When the cancel button is clicked, prompt() returns null.
             alert("Operación cancelada");
             return null;
         }
-    } while (isNaN(parseInt(userInput)) || userInput.trim() === ""); //lo parseado no es un número o está vacío
+    } while (isNaN(parseInt(userInput)) || userInput.trim() === ""); //"" represents an empty string, which is a valid string value but contains no characters.
     return parseInt(userInput);
 };
 
