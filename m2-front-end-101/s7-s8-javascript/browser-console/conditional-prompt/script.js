@@ -21,10 +21,11 @@
 2.5 Opción inválida: Mostrar mensaje */
 
 //SECTION - Constants
-const DoHaveNewDoubt = "¿Tiene otra duda? Escriba 'Sí' o 'No'";
+const doHaveNewDoubt = "¿Tiene otra duda?";
 
-const invalidOptionMsg =
-	"Opción inválida. Gracias por preferir nuestros servicios.";
+const invalidOptionMsg = "Opción inválida.";
+
+const endApp = "Gracias por preferir nuestros servicios.";
 
 const welcomeMsg =
 	"¡Hola! Soy Eva, tu asistente virtual del Servicio al Cliente de Mentel. Estoy aquí para ayudarte en lo que necesides.\nEscribe el número de la opción que buscas: \n1.- Boletas y Pagos \n2.- Señal y llamadas \n3.- Oferta comercial  \n4.- Otras consultas";
@@ -49,9 +50,9 @@ const offers3 =
 const offers3i1 = "Un ejecutivo contactará con usted";
 const offers3i2 = "Gracias por preferir nuestros servicios";
 
-const miscDoubts4 =
-	"A continuación escriba detalles para su solicitud:";
-    const miscDoubts4i1 = (details) => `Estimado usuario, su consulta: <${details}> ha sido ingresada con éxito. Pronto será contactado por uno de nuestros ejecutivos.`;
+const miscDoubts4 = "A continuación escriba detalles para su solicitud:";
+const miscDoubts4i1 = (details) =>
+	`Estimado usuario, su consulta: <${details}> ha sido ingresada con éxito. Pronto será contactado por uno de nuestros ejecutivos.`;
 
 //!SECTION - Constants
 
@@ -79,6 +80,18 @@ const writeStringOption = (message) => {
 	return userInput;
 };
 //!SECTION - Generic Functions
+
+//SECTION - L1 sections
+const doRepeatApp = () => {
+	const doRepeatApp = confirm(doHaveNewDoubt);
+	if (!doRepeatApp) {
+		alert(endApp);
+		return;
+	} else {
+		virtualBoxApp();
+	}
+};
+//!SECTION - L1 sections
 
 //SECTION - L2 sections
 //SECTION - 1 - receiptAndPayment/Boleta y pagos
@@ -108,14 +121,15 @@ const signalAndCallIssues = () => {
 	const userInput = writeNumberOption(signalAndCallIssues2);
 	if (userInput === null) return;
 
-	details = writeStringOption(signalAndCallIssues2i1);
-	if (details === null) return;
-
 	switch (userInput) {
 		case 1:
+			details = writeStringOption(signalAndCallIssues2i1);
+			if (details === null) return;
 			alert(signalAndCallIssues2i1i1Msg(signalAndCallIssues2a, details));
 			break;
 		case 2:
+			details = writeStringOption(signalAndCallIssues2i1);
+			if (details === null) return;
 			alert(signalAndCallIssues2i1i1Msg(signalAndCallIssues2b, details));
 			break;
 		default:
@@ -130,13 +144,13 @@ const offers = () => {
 	let userInput = writeStringOption(offers3);
 	if (userInput === null) return;
 
-    let normalizedUserInput = userInput.toLowerCase().trim().replace(/í/g, "i");
+	let normalizedUserInput = userInput.toLowerCase().trim().replace(/í/g, "i");
 	switch (normalizedUserInput) {
 		case "si":
-            alert(offers3i1);
+			alert(offers3i1);
 			break;
 		case "no":
-            alert(offers3i2);
+			alert(offers3i2);
 			break;
 		default:
 			alert(invalidOptionMsg);
@@ -147,10 +161,10 @@ const offers = () => {
 
 //SECTION - 4 - miscDoubts/Otras consultas
 const miscDoubts = () => {
-    let userInput = writeStringOption(miscDoubts4);
-    if (userInput === null) return;
+	let userInput = writeStringOption(miscDoubts4);
+	if (userInput === null) return;
 
-    alert(miscDoubts4i1(userInput));
+	alert(miscDoubts4i1(userInput));
 };
 //!SECTION - 4 - miscDoubts/Otras consultas
 //!SECTION - L2 sections
@@ -158,7 +172,6 @@ const miscDoubts = () => {
 //SECTION - L1 section: Main App
 const virtualBoxApp = () => {
 	const userInput = writeNumberOption(welcomeMsg);
-	if (userInput === null) return;
 
 	switch (userInput) {
 		case 1:
@@ -170,11 +183,14 @@ const virtualBoxApp = () => {
 			break;
 
 		case 3:
-            offers();
+			offers();
 			break;
 
 		case 4:
-            miscDoubts();
+			miscDoubts();
+			break;
+
+		case null:
 			break;
 
 		default:
@@ -182,10 +198,7 @@ const virtualBoxApp = () => {
 			break;
 	}
 
-    const doRepeatApp = prompt(DoHaveNewDoubt);
-    if (doRepeatApp === null) return;
-    let normalizedUserInput = doRepeatApp.toLowerCase().trim();
-    (normalizedUserInput === "no") ? alert("Gracias por preferir nuestros servicios.") : virtualBoxApp();
+	doRepeatApp();
 };
 
 virtualBoxApp();
