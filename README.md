@@ -33,6 +33,7 @@ Click to see the code in action 👉 [LIVE DEMO](https://armincano.github.io/ful
 
 ### JavaScript
 
+- [BankingApp using dialog boxes, loops and objects](./m2-front-end-101/s7-s8-javascript/control-flow/banking-app/banking-app.html)
 - [Send doubts and navigate through a menu](./m2-front-end-101/s7-s8-javascript/browser-console/conditional-prompt/conditional-prompt.html)
 - [Calculate the total, VAT and discount](./m2-front-end-101/s7-s8-javascript/browser-console/calc-total-and-vat-and-discount/calc-total-and-vat-and-discount.html)
 - [Compare numbers](./m2-front-end-101/s7-s8-javascript/browser-console/compare-numbers.html)
