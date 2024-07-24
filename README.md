@@ -37,3 +37,7 @@ Click to see the code in action 👉 [LIVE DEMO](https://armincano.github.io/ful
 - [Send doubts and navigate through a menu](./m2-front-end-101/s7-s8-javascript/browser-console/conditional-prompt/conditional-prompt.html)
 - [Calculate the total, VAT and discount](./m2-front-end-101/s7-s8-javascript/browser-console/calc-total-and-vat-and-discount/calc-total-and-vat-and-discount.html)
 - [Compare numbers](./m2-front-end-101/s7-s8-javascript/browser-console/compare-numbers.html)
+
+### DOM
+
+- [DOM events: mouseover and dblclick. classList property.](./m2-front-end-101/s9-s10-dom/event-mouseover-dblclick/event-mouseover-dblclick.html)
