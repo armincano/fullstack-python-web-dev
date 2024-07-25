@@ -31,40 +31,36 @@ $(document).ready(function () {
 
 	// 5. Listen for the form submit event, prevent the default form submission, and validate the form input data.
 	$("#form1").on("submit", function (event) {
-        event.preventDefault()
+		event.preventDefault();
 		let isValid = true;
-        $(".error").remove();
-        $(".success").remove();
-        $("#username").empty();
-        $("#username").empty();
+		$(".error").remove();
+		$(".success").remove();
+		const username = $("#username").val().trim();
+		const email = $("#email").val().trim();
 
-        const username = $("#username").val().trim();
-        const email = $("#email").val().trim();
-        
 		// validate username
 		if (username === "") {
 			isValid = false;
-			$("#username").after(
-				"<span class='error'>Username is required</span>"
-			);
+			$("#username").after("<span class='error'>Username is required</span>");
 		}
 
-        // validate password
+		// validate password
 		const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-        if(email === "") {
-            isValid = false;
-            $("#email").after("<span class='error'>Email is required</span>")
-        }else if (!emailPattern.test(email)) {
+		if (email === "") {
 			isValid = false;
-			$("#email").after(
-				"<span class='error'>Invalid email format</span>"
-			);
+			$("#email").after("<span class='error'>Email is required</span>");
+		} else if (!emailPattern.test(email)) {
+			isValid = false;
+			$("#email").after("<span class='error'>Invalid email format</span>");
 		}
 
-        if (isValid) {
-            // $("#form1").html("<span class='success'>Form submitted successfully</span>") // replace the innerHTML of form1
-            $("#form1").append("<span class='success'>Form submitted successfully</span>")
-        }
-
+		if (isValid) {
+			// $("#form1").html("<span class='success'>Form submitted successfully</span>") // replace the innerHTML of form1
+			$("#form1").append(
+				"<span class='success'>Form submitted successfully</span>"
+			);
+			$("#username").val("");
+			$("#email").val("");
+		}
 	});
 });
