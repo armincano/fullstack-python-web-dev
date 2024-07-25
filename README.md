@@ -40,4 +40,6 @@ Click to see the code in action 👉 [LIVE DEMO](https://armincano.github.io/ful
 
 ### DOM
 
+- [To-do list using dom events, array of objects and Bootstrap.](./m2-front-end-101/s9-s10-dom/to-do-app/index.html)
 - [DOM events: mouseover and dblclick. classList property.](./m2-front-end-101/s9-s10-dom/event-mouseover-dblclick/event-mouseover-dblclick.html)
+- [jQuery. A framework for simple tasks and legacy projects](./m2-front-end-101/s9-s10-dom/jquery/jquery-1.html)

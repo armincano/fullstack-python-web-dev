@@ -1,0 +1,47 @@
+hr{
+    margin-bottom: 22px;
+}
+
+#squareToggleColorDiv {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	margin: 10px;
+	display: inline-block;
+}
+
+#squareMoveRightDiv {
+	float: left;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 14px;
+	background-color: blue;
+	margin: 10px;
+}
+
+.clear-left-float {
+	clear: left;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.mx-5{
+	margin: 0 auto;
+}
+
+#form1{
+	padding: 18px 34px;
+}
+
+.error{
+	color: red;
+}
+
+.success{
+	color: green;
+}

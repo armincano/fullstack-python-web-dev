@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>jQuery - Basics</title>
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+	</style>
+	<body>
+        <h1>jQuery - Basics</h1>
+		<small
+			>1. A button click event that changes the text of a paragraph
+			element</small
+		>
+		<p id="text1">zZZzZzZzZ</p>
+		<button id="changeTextBtn">Say Hello</button>
+		<hr />
+
+		<small
+			>2. A button click event that toggle the paragraph element between diplay
+			and hide</small
+		>
+		<p id="text2">
+			♬<br />I come and I go<br />
+			Tell me all the ways you need me<br />
+			I'm not here for long<br />
+			Catch me or I go...
+		</p>
+		<button id="toggleTextBtn">Houdini</button>
+		<hr />
+
+		<small
+			>3. Attach an event handler to be fired when the mouse enters a div
+			element. The event changes the background color of the div element<br />Concatenate
+			an event handler to be fired when the mouse leaves an element. The event
+			changes the background color to the previous one.</small
+		>
+		<br />
+		<div id="squareToggleColorDiv"></div>
+		<hr />
+
+		<small
+			>4. Animate a div element to move to the right when the mouse enters the
+			element.<br />Notice that the 'position' css property is set to 'relative'
+			so we can work with the 'float' propery with value 'left' and use the left
+			side of the box as reference to move.<br />There is also a delay before
+			executing the second event handler's code.</small
+		>
+		<br />
+		<div id="squareMoveRightDiv"></div>
+		<hr class="clear-left-float" />
+
+        <small>5. Listen for the form submit event, prevent the default form submission, and validate the form input data.</small>
+        <br>
+		<div>
+			<form action="" id="form1" class="container">
+
+				<label for="username">Username</label>
+				<input
+					type="text"
+					id="username"
+					name="username"
+					placeholder="Enter your username"
+				/>
+
+                <label for="email">Email</label>
+                <input
+					type="text"
+					id="email"
+					name="email"
+					placeholder="Enter your email"
+				/>
+
+                <button type="submit" class="mx-5">Send</button>
+
+			</form>
+		</div>
+        <hr>
+
+		<script src="./script-1.js"></script>
+	</body>
+</html>
