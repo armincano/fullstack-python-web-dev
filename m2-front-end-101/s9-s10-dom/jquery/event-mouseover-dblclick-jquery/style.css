@@ -1,0 +1,55 @@
+body{
+    font-family: sans-serif;
+}
+
+img{
+    display: block;
+}
+
+span{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.container {
+    padding: 12px;
+}
+
+.caja1, #caja2, #caja3 {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+.caja1 {
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 8px;
+}
+
+#text1 {
+    border: 4px solid violet;
+    border-radius: 8px;
+}
+
+#text2 {
+    border: 4px solid orange;
+    border-radius: 8px;
+    width: 50%;
+}
+
+#caja2 {
+    border: 4px solid black;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#caja3 {
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 8px;
+}
+
+.hidden { display: none; }
+.full-width { width: 100%; }
+.normal-width { width: 40%; }
+.large-text { font-size: 2rem; }
