@@ -1,0 +1,40 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+.title {
+	color: #231212;
+	margin: 40px 0px 0px 30px;
+}
+
+.row {
+	margin: 0px 60px 0px 60px;
+}
+
+.detalles {
+	display: none;
+	/*  border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+	position: fixed;
+	top: 10%;
+	left: 10%;
+	z-index: 2;
+}
+
+.detalles .card{
+    padding: 20px 0 60px 20px;
+}
+
+.btn-close {
+	padding: 15px;
+}
+
+#modalCardBody .card-body{
+	padding: 0 10px 0 20px;
+}
+
+#modalCardImg img{
+	margin-bottom: 22px;
+}
