@@ -30,7 +30,7 @@
 
 //SECTION - Texts
 const welcomeAppMsg = "Bienvenido a Banca en Línea";
-const runAuthMsg = "Ingresa tu RUN";
+const runAuthMsg = "Ingresa tu RUN\nPuedes usar el RUN 123, 456 o 789 siendo la contraseña igual al RUN utilizado";
 const passwordAuthMsg = "Intrega tu contraseña";
 const wrongCredentialsMsg =
 	"Tus credenciales son incorrectas, inténtalo nuevamente";
@@ -186,7 +186,8 @@ const bankingApp = () => {
 	let userCredentials = [false, 0];
 	let closeSession = false;
 
-	alert(welcomeAppMsg);
+	alert(welcomeAppMsg)
+
 	const userRunInput = numberInput(runAuthMsg);
 	if (userRunInput === null) return;
 
@@ -196,12 +197,13 @@ const bankingApp = () => {
 	userCredentials = checkCredentials(userRunInput, userPasswordInput);
 	if (!userCredentials[0]) {
 		alert(wrongCredentialsMsg);
-		return;
+		bankingApp();
+	}else{
+		do {
+			closeSession = accountApp(userCredentials);
+		} while (!closeSession);
 	}
-
-	do {
-		closeSession = accountApp(userCredentials);
-	} while (!closeSession);
+	
 };
 
 bankingApp();
