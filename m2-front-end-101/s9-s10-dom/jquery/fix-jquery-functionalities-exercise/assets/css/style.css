@@ -14,17 +14,29 @@ body {
 }
 
 .detalles {
-	display: none;
-	/*  border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-	position: fixed;
-	top: 10%;
-	left: 10%;
-	z-index: 2;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(209, 227, 255, 0.865); /* Semi-transparent background */
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 15px; /* Padding similar to Bootstrap container */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
-.detalles .card{
-    padding: 20px 0 60px 20px;
+.detalles .card {
+    padding: 20px 20px 60px 20px;
+    max-width: 1140px; /* Maximum width similar to Bootstrap container */
+    margin: auto; /* Center the card and add top margin */
+    background-color: white; /* Background color of the card */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
 }
 
 .btn-close {
