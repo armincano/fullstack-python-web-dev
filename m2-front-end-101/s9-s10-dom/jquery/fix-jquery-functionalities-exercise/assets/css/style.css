@@ -23,7 +23,6 @@ body {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(209, 227, 255, 0.865); /* Semi-transparent background */
-    display: flex; /* Use Flexbox */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     padding: 15px; /* Padding similar to Bootstrap container */

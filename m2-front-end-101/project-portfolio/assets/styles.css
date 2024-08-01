@@ -1,0 +1,166 @@
+/* SECTION Fonts */
+@font-face {
+	font-family: "Causten Round", sans-serif;
+	src: url("./fonts/causten-round-bold.otf") format("opentype");
+	font-weight: 700;
+	font-style: bold;
+}
+
+@font-face {
+	font-family: "Roboto", sans-serif;
+	src: url("./fonts/roboto-regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+/* !SECTION Fonts */
+
+/* SECTION Color Pallete */
+:root {
+	--primary-color: #03256C;
+	--secondary-color: #dddddd;
+	--bg1-color: #FFD056;
+	--bg2-color: #FFB72B;
+	--em1-color: #03E4AC;
+	--em2-color: #FE4D2B;
+	--em3-color: #F37EB2;
+	--em4-color: #4D55F5;
+	--success-color: #28a745;
+	--info-color: #17a2b8;
+	--warning-color: #ffc107;
+	--danger-color: #dc3545;
+}
+/* !SECTION Color Pallete */
+
+/* SECTION CSS variables for common values */
+:root {
+	--padding-small: 0.8rem;
+	--padding-large: 2rem;
+	--margin-small: 0.8rem;
+	--top-space-small: 5%;
+	--top-space-medium: 10%;
+	--top-space-large: 20%;
+}
+/* !SECTION CSS variables for common values */
+
+/* SECTION Structural */
+html {
+	box-sizing: border-box;
+	font-size: 20px;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0px;
+	font-family: "Roboto";
+	color: var(--primary-color);
+    background-color: var(--bg1-color);
+}
+
+div{
+    border: 1px solid black;
+}
+
+h1 {
+	font-family: "Causten Round";
+	font-size: 3.8rem;
+	color: var(--primary-color);
+	line-height: 4rem;
+    white-space: wrap;
+}
+
+h2 {
+	font-family: "Causten Round";
+	font-size: 3rem;
+	color: var(--primary-color);
+	line-height: 3.2rem;
+    white-space: wrap;
+}
+
+.bordered-body-font{
+    font-family: "Causten Round";
+    font-size: 2.3rem;
+    color: var(--bg2-color);
+    line-height: 1rem;
+    text-shadow: 
+        -1px -1px 0 #03256C,  
+         4px -1px 0 #03256C,
+        -1px  1px 0 #03256C,
+         1px  1px 0 #03256C;
+}
+
+span{
+    font-family: "Causten Round";
+    font-size: 1.3rem;
+    color: var(--bg2-color);
+    line-height: 1rem;
+    text-shadow: 
+        -1px -1px 0 #03256C,  
+         4px -1px 0 #03256C,
+        -1px  1px 0 #03256C,
+         1px  1px 0 #03256C;
+}
+
+.card .img-fluid {
+    height: 100%;
+    width: auto;
+    object-fit: cover; /* Ensures the image covers the container without overflow */
+}
+
+.h-33 {
+    height: 33.33vh;
+}
+.wrap-text {
+    white-space: normal; /* Ensure text can wrap */
+    word-wrap: break-word; /* Break long words if necessary */
+}
+/* !SECTION Structural */
+
+/* SECTION Hero */
+.avatar-container{
+    position: absolute;
+    top: 45%;
+    left: 32%;
+}
+
+.avatar{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    border: 1px solid black;
+
+}
+
+.circle-1{
+    width: 190px;
+    height: 190px;
+    background-color: var(--bg2-color);
+    clip-path: circle();
+}
+
+.circle-2{
+    width: 290px;
+    height: 290px;
+    background-color: var(--bg2-color);
+    clip-path: circle();
+}
+/* !SECTION Hero */
+
+/* SECTION Projects */
+.project-card{
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    box-shadow: 8px 10px var(--primary-color);
+}
+
+/* !SECTION Projects */
+
+/* SECTION Skills */
+/* !SECTION Skills */
+
+/* SECTION Footer */
+/* !SECTION Footer */
