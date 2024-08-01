@@ -1,6 +1,30 @@
 # Challenges and Assignments from a Python Bootcamp Student
 
-Click to see the code in action 👉 [LIVE DEMO](https://armincano.github.io/fullstack-python-web-dev/) 👀
+## 👉 [LIVE DEMO](https://armincano.github.io/fullstack-python-web-dev/)
+
+## Module 03: Python 101
+
+![Python badge](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
+![Git badge](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+![GitHub badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![VSCode badge](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![HTML badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+### Conditional statement
+
+- [Game score system](./m3-python-101/game_score_system_using_if_elif-dict-list.py)
+
+### Iterative statement
+
+#### for loop
+
+- [Delete vocals in a word](./m3-python-101/delete_vocals_in_word_for_loop.py)
+
+### Libraries
+
+- [random](./m3-python-101/guess_number_random_lib.py)
+- [math](./m3-python-101/square_root_math_lib.py)
 
 ## Module 02: Front-end 101
 
@@ -12,6 +36,10 @@ Click to see the code in action 👉 [LIVE DEMO](https://armincano.github.io/ful
 ![Git badge](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 ![VSCode badge](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+
+### Final project of the module
+
+🐍🤓 [Portfolio of a Python Webdev Student](./m2-front-end-101/project-portfolio/index.html)
 
 ### HTML
 
