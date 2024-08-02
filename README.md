@@ -11,22 +11,11 @@
 ![HTML badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-### Conditional statement
+### [Conditional statements ↪️](./m3-python-101/conditional_statements_notebook.ipynb)
 
-- [Game score system](./m3-python-101/game_score_system_using_if_elif-dict-list.py)
-- [Analyze number properties. Use nesting conditions](./m3-python-101/analyze_number_properties_nesting_conditions.py)
+### [Iterative statements 🔃](./m3-python-101/iterative_statements_notebook.ipynb)
 
-### Iterative statement
-
-#### for loop
-
-- [Bubble sorting algorithm](./m3-python-101/bubble_sorting_algorithm.py)
-- [Delete vocals in a word](./m3-python-101/delete_vocals_in_word_for_loop.py)
-
-### Libraries
-
-- [random](./m3-python-101/guess_number_random_lib.py)
-- [math](./m3-python-101/square_root_math_lib.py)
+### [Libraries 📚](./m3-python-101/libraries_notebook.ipynb)
 
 ## Module 02: Front-end 101
 
