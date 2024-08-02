@@ -14,11 +14,13 @@
 ### Conditional statement
 
 - [Game score system](./m3-python-101/game_score_system_using_if_elif-dict-list.py)
+- [Analyze number properties. Use nesting conditions](./m3-python-101/analyze_number_properties_nesting_conditions.py)
 
 ### Iterative statement
 
 #### for loop
 
+- [Bubble sorting algorithm](./m3-python-101/bubble_sorting_algorithm.py)
 - [Delete vocals in a word](./m3-python-101/delete_vocals_in_word_for_loop.py)
 
 ### Libraries
