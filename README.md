@@ -11,11 +11,11 @@
 ![HTML badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-### [Conditional statements ↪️](./m3-python-101/conditional_statements_notebook.ipynb)
+### [Conditional statements ↪️](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m3-python-101/conditional_statements_notebook.ipynb)
 
-### [Iterative statements 🔃](./m3-python-101/iterative_statements_notebook.ipynb)
+### [Iterative statements 🔃](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m3-python-101/iterative_statements_notebook.ipynb)
 
-### [Libraries 📚](./m3-python-101/libraries_notebook.ipynb)
+### [Libraries 📚](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m3-python-101/libraries_notebook.ipynb)
 
 ## Module 02: Front-end 101
 
