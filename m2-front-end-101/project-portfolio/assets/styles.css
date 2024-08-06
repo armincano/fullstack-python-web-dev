@@ -79,9 +79,9 @@ hr {
 
 h1 {
 	font-family: "Causten Round";
-	font-size: 5rem;
+	font-size: 4.6rem;
 	color: var(--primary-color);
-	line-height: 5.4rem;
+	line-height:4.5rem;
 	white-space: wrap;
 }
 
@@ -99,6 +99,15 @@ h3 {
 	color: var(--primary-color);
 	line-height: 2.2rem;
 	white-space: wrap;
+}
+
+h4 {
+	font-family: "Causten Round";
+	font-size: 1.6rem;
+	color: var(--primary-color);
+	line-height: 1.7rem;
+	white-space: wrap;
+	overflow: scroll;
 }
 
 #contactFormMessageInput,
@@ -182,40 +191,46 @@ span {
 .bg-color-em4 {
 	background-color: var(--em4-color);
 }
+
+.custom-btn{
+	overflow: scroll;
+}
+
+.overflow-scroll {
+	overflow: scroll;
+}
+
 /* !SECTION Structural */
 
 /* SECTION Hero */
-.avatar-container {
-	position: absolute;
-	top: 45%;
-	left: 32%;
-	width: 300px;
-}
 
 .avatar {
 	position: absolute;
-	bottom: 0;
+	top: 100;
 	z-index: 1;
+	width: 200px;
 	/* border: 1px solid black; */
 }
 
 .circle-1 {
-	width: 280px;
-	height: 280px;
-	background-color: var(--bg2-color);
-	clip-path: circle();
-}
-
-.circle-2 {
-	width: 290px;
-	height: 290px;
+	width: 200px;
+	height: 200px;
 	background-color: var(--bg2-color);
 	clip-path: circle();
 }
 /* !SECTION Hero */
 
 /* SECTION Projects */
-.project-card {
+.project-number {
+	font-size: 2.6rem;
+}
+
+.project-card-img {
+	border: 2.5px solid var(--primary-color);
+	border-radius: 12px;
+}
+
+.project-card-description {
 	border: 2.5px solid var(--primary-color);
 	border-radius: 12px;
 	box-shadow: 8px 10px var(--primary-color);
@@ -251,6 +266,12 @@ span {
 /* !SECTION Skills */
 
 /* SECTION Contact */
+.contact-card {
+	border: 2.5px solid var(--primary-color);
+	border-radius: 12px;
+	box-shadow: 8px 10px var(--primary-color);
+}
+
 .error {
 	color: var(--bg2-color);
 }
@@ -260,16 +281,30 @@ span {
 }
 /* !SECTION Contact */
 
+/* SECTION Footer */
+.footer-img {
+	width: 75px;
+	height: 75px;
+}
+/* !SECTION Footer */
+
 /* SECTION Animations */
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+@keyframes zoomIn {
+	from {
+	  transform: scale(0.5);
+	}
+	to {
+	  transform: scale(1);
+	}
+  }
+
+  @keyframes zoomInOut {
+	0%, 100% {
+	  transform: scale(1);
+	}
+	50% {
+	  transform: scale(1.1);
+	}
   }
 
   @keyframes moveUpDown {
@@ -280,9 +315,49 @@ span {
       transform: translateY(-10px);
     }
   }
+
+  @keyframes scaleRotate {
+	0% {
+	  transform: scale(1.5) rotate(10deg);
+	}
+	100% {
+		transform: scale(1) rotate(0deg);
+	  }
+  }
   
   .avatar {
     animation: moveUpDown 2s infinite;
+  }
+
+  .project-card-img {
+	opacity: 0;
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .project-card-img.in-view {
+	animation: zoomIn 0.5s forwards;
+	opacity: 1;
+  }
+
+  .project-link {
+	animation: zoomInOut 5s infinite;
+	transform-origin: left;
+  }
+
+  #skillsContainer {
+	animation: scaleRotate 3s ease-in;
+  }
+
+  .rrss-link {
+	transition: transform 0.3s ease-in-out;
+  }
+  
+  .rrss-link:hover {
+	transform: scale(1.4);
+  }
+
+  #sendContactFormBtn{
+	animation: zoomInOut 5s infinite;
   }
 
 
