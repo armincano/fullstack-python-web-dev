@@ -16,14 +16,14 @@
 
 /* SECTION Color Pallete */
 :root {
-	--primary-color: #03256C;
+	--primary-color: #03256c;
 	--secondary-color: #dddddd;
-	--bg1-color: #FFD056;
-	--bg2-color: #FFB72B;
-	--em1-color: #03E4AC;
-	--em2-color: #FE4D2B;
-	--em3-color: #F37EB2;
-	--em4-color: #4D55F5;
+	--bg1-color: #ffd056;
+	--bg2-color: #ffb72b;
+	--em1-color: #03e4ac;
+	--em2-color: #fe4d2b;
+	--em3-color: #f37eb2;
+	--em4-color: #4d55f5;
 	--success-color: #28a745;
 	--info-color: #17a2b8;
 	--warning-color: #ffc107;
@@ -58,109 +58,232 @@ body {
 	margin: 0px;
 	font-family: "Roboto";
 	color: var(--primary-color);
-    background-color: var(--bg1-color);
+	background-color: var(--bg1-color);
 }
 
-div{
-    border: 1px solid black;
+div {
+	/* border: 1px solid black; */
+}
+
+.card hr {
+	border: 2px solid var(--primary-color);
+	border-radius: 3px;
+	opacity: 0.5;
+}
+
+hr {
+	border: 5px dashed var(--primary-color);
+	border-radius: 3px;
+	opacity: 1;
 }
 
 h1 {
 	font-family: "Causten Round";
-	font-size: 3.8rem;
+	font-size: 5rem;
 	color: var(--primary-color);
-	line-height: 4rem;
-    white-space: wrap;
+	line-height: 5.4rem;
+	white-space: wrap;
 }
 
 h2 {
 	font-family: "Causten Round";
-	font-size: 3rem;
+	font-size: 4rem;
 	color: var(--primary-color);
-	line-height: 3.2rem;
-    white-space: wrap;
+	line-height: 3.6rem;
+	white-space: wrap;
 }
 
-.bordered-body-font{
-    font-family: "Causten Round";
-    font-size: 2.3rem;
-    color: var(--bg2-color);
-    line-height: 1rem;
-    text-shadow: 
-        -1px -1px 0 #03256C,  
-         4px -1px 0 #03256C,
-        -1px  1px 0 #03256C,
-         1px  1px 0 #03256C;
+h3 {
+	font-family: "Causten Round";
+	font-size: 2.2rem;
+	color: var(--primary-color);
+	line-height: 2.2rem;
+	white-space: wrap;
 }
 
-span{
-    font-family: "Causten Round";
-    font-size: 1.3rem;
-    color: var(--bg2-color);
-    line-height: 1rem;
-    text-shadow: 
-        -1px -1px 0 #03256C,  
-         4px -1px 0 #03256C,
-        -1px  1px 0 #03256C,
-         1px  1px 0 #03256C;
+#contactFormMessageInput,
+#contactFormEmailInput {
+	font-family: "Causten Round";
+	font-size: 1.6rem;
+	color: var(--primary-color);
+	line-height: 2.2rem;
+	white-space: wrap;
+}
+
+textarea::placeholder {
+	font-family: "Causten Round";
+	font-size: 1.6rem;
+	color: var(--primary-color);
+	line-height: 2.2rem;
+	white-space: wrap;
+}
+
+.bordered-body-font {
+	font-family: "Causten Round";
+	font-size: 2.3rem;
+	color: var(--bg2-color);
+	line-height: 1rem;
+	text-shadow: -1px -1px 0 #03256c, 4px -1px 0 #03256c, -1px 1px 0 #03256c,
+		1px 1px 0 #03256c;
+}
+
+span {
+	font-family: "Causten Round";
+	font-size: 1.3rem;
+	color: var(--bg2-color);
+	line-height: 1rem;
+	text-shadow: -1px -1px 0 #03256c, 4px -1px 0 #03256c, -1px 1px 0 #03256c,
+		1px 1px 0 #03256c;
 }
 
 .card .img-fluid {
-    height: 100%;
-    width: auto;
-    object-fit: cover; /* Ensures the image covers the container without overflow */
+	height: 100%;
+	width: auto;
+	object-fit: cover; /* Ensures the image covers the container without overflow */
 }
 
 .h-33 {
-    height: 33.33vh;
+	height: 33.33vh;
 }
+
+.h-45 {
+	height: 45vh;
+}
+
+.air-gap-small {
+	margin-top: var(--top-space-small);
+}
+
+.air-gap-medium {
+	margin-top: var(--top-space-medium);
+}
+
+.air-gap-large {
+	margin-top: var(--top-space-large);
+}
+
 .wrap-text {
-    white-space: normal; /* Ensure text can wrap */
-    word-wrap: break-word; /* Break long words if necessary */
+	white-space: normal; /* Ensure text can wrap */
+	word-wrap: break-word; /* Break long words if necessary */
+}
+
+.bg-color-em1 {
+	background-color: var(--em1-color);
+}
+
+.bg-color-em2 {
+	background-color: var(--em2-color);
+}
+
+.bg-color-em3 {
+	background-color: var(--em3-color);
+}
+
+.bg-color-em4 {
+	background-color: var(--em4-color);
 }
 /* !SECTION Structural */
 
 /* SECTION Hero */
-.avatar-container{
-    position: absolute;
-    top: 45%;
-    left: 32%;
+.avatar-container {
+	position: absolute;
+	top: 45%;
+	left: 32%;
+	width: 300px;
 }
 
-.avatar{
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    border: 1px solid black;
-
+.avatar {
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	/* border: 1px solid black; */
 }
 
-.circle-1{
-    width: 190px;
-    height: 190px;
-    background-color: var(--bg2-color);
-    clip-path: circle();
+.circle-1 {
+	width: 280px;
+	height: 280px;
+	background-color: var(--bg2-color);
+	clip-path: circle();
 }
 
-.circle-2{
-    width: 290px;
-    height: 290px;
-    background-color: var(--bg2-color);
-    clip-path: circle();
+.circle-2 {
+	width: 290px;
+	height: 290px;
+	background-color: var(--bg2-color);
+	clip-path: circle();
 }
 /* !SECTION Hero */
 
 /* SECTION Projects */
-.project-card{
-    border: 2px solid var(--primary-color);
-    border-radius: 12px;
-    box-shadow: 8px 10px var(--primary-color);
+.project-card {
+	border: 2.5px solid var(--primary-color);
+	border-radius: 12px;
+	box-shadow: 8px 10px var(--primary-color);
 }
 
 /* !SECTION Projects */
 
 /* SECTION Skills */
+.skill-card {
+	border: 2.5px solid var(--primary-color);
+	border-radius: 32px;
+}
+
+.circle-3 {
+	width: 50px;
+	height: 50px;
+	clip-path: circle();
+	position: relative; /* Add this */
+}
+
+.circle-3::before {
+	content: "";
+	position: absolute;
+	top: -2.5px; /* Adjust based on border width */
+	left: -2.5px; /* Adjust based on border width */
+	width: calc(100% + 5px); /* Adjust based on border width */
+	height: calc(100% + 5px); /* Adjust based on border width */
+	border: 5px solid var(--primary-color); /* Example color */
+	border-radius: 50%; /* Make it circular */
+	box-sizing: border-box; /* Ensure the border is included in the size */
+}
+
 /* !SECTION Skills */
 
-/* SECTION Footer */
-/* !SECTION Footer */
+/* SECTION Contact */
+.error {
+	color: var(--bg2-color);
+}
+
+.success {
+	color: var(--em1-color);
+}
+/* !SECTION Contact */
+
+/* SECTION Animations */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .avatar {
+    animation: moveUpDown 2s infinite;
+  }
+
+
+/* !SECTION Animations */
