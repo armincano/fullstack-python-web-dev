@@ -28,6 +28,7 @@
 	--info-color: #17a2b8;
 	--warning-color: #ffc107;
 	--danger-color: #dc3545;
+	--hover-bg-color: white;
 }
 /* !SECTION Color Pallete */
 
@@ -77,6 +78,10 @@ hr {
 	opacity: 1;
 }
 
+.btn:hover {
+    background-color: var(--hover-bg-color);
+}
+
 h1 {
 	font-family: "Causten Round";
 	font-size: 4.6rem;
@@ -87,15 +92,15 @@ h1 {
 
 h2 {
 	font-family: "Causten Round";
-	font-size: 4rem;
+	font-size: 3.4rem;
 	color: var(--primary-color);
-	line-height: 3.6rem;
+	line-height: 3rem;
 	white-space: wrap;
 }
 
 h3 {
 	font-family: "Causten Round";
-	font-size: 2.2rem;
+	font-size: 2rem;
 	color: var(--primary-color);
 	line-height: 2.2rem;
 	white-space: wrap;
@@ -103,9 +108,9 @@ h3 {
 
 h4 {
 	font-family: "Causten Round";
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 	color: var(--primary-color);
-	line-height: 1.7rem;
+	line-height: 1.5rem;
 	white-space: wrap;
 	overflow: scroll;
 }
@@ -215,7 +220,7 @@ span {
 .circle-1 {
 	width: 200px;
 	height: 200px;
-	background-color: var(--bg2-color);
+	background-color: var(--em2-color);
 	clip-path: circle();
 }
 /* !SECTION Hero */
@@ -235,7 +240,6 @@ span {
 	border-radius: 12px;
 	box-shadow: 8px 10px var(--primary-color);
 }
-
 /* !SECTION Projects */
 
 /* SECTION Skills */
@@ -256,9 +260,9 @@ span {
 	position: absolute;
 	top: -2.5px; /* Adjust based on border width */
 	left: -2.5px; /* Adjust based on border width */
-	width: calc(100% + 5px); /* Adjust based on border width */
-	height: calc(100% + 5px); /* Adjust based on border width */
-	border: 5px solid var(--primary-color); /* Example color */
+	width: calc(100% + 5.5px); /* Adjust based on border width */
+	height: calc(100% + 5.5px); /* Adjust based on border width */
+	border: 5.5px solid var(--primary-color); /* Example color */
 	border-radius: 50%; /* Make it circular */
 	box-sizing: border-box; /* Ensure the border is included in the size */
 }
@@ -282,7 +286,7 @@ span {
 /* !SECTION Contact */
 
 /* SECTION Footer */
-.footer-img {
+.footer-img{
 	width: 75px;
 	height: 75px;
 }
@@ -318,9 +322,11 @@ span {
 
   @keyframes scaleRotate {
 	0% {
+		opacity: 0;
 	  transform: scale(1.5) rotate(10deg);
 	}
 	100% {
+		opacity: 1;
 		transform: scale(1) rotate(0deg);
 	  }
   }
@@ -345,7 +351,12 @@ span {
   }
 
   #skillsContainer {
-	animation: scaleRotate 3s ease-in;
+	opacity: 0;
+  }
+
+  #skillsContainer.in-view {
+	opacity: 1;
+	animation: scaleRotate 1s ease-in;
   }
 
   .rrss-link {

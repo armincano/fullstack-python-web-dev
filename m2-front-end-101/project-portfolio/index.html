@@ -18,9 +18,11 @@
 		<!-- SECTION Body -->
 		<div class="container">
 			<!-- SECTION hero -->
-			<main class="vh-100 py-3">
+			<header class="vh-100 py-3">
 				<div class="h-100 row">
-					<div class="col-12 col-md-5 pe-4 d-flex justify-content-end align-items-center">
+					<div
+						class="col-12 col-md-5 pe-4 d-flex justify-content-end align-items-center"
+					>
 						<img
 							src="./assets/img/me-avatar.png"
 							alt=""
@@ -29,7 +31,9 @@
 						<div class="circle-1"></div>
 					</div>
 
-					<div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+					<div
+						class="col-12 col-md-7 d-flex flex-column justify-content-center"
+					>
 						<div class="wrap-text">
 							<h1>Hi, I am Armin<span>😀</span></h1>
 						</div>
@@ -39,120 +43,127 @@
 						</p>
 					</div>
 				</div>
-			</main>
+			</header>
 			<!-- !SECTION hero -->
 
-			<!-- SECTION projects -->
-			<div class="air-gap-small"></div>
-			<section id="projects">
-				<h2 class="wrap-text">projects</h2>
-				<hr />
+			<main>
+				<!-- SECTION projects -->
+				<div class="air-gap-small"></div>
+				<section id="projects">
+					<h2 class="wrap-text">projects</h2>
+					<hr />
+					<div class="air-gap-medium"></div>
+					<div id="projectsContainer"></div>
+				</section>
+				<!-- !SECTION projects -->
+
+				<!-- SECTION skills -->
 				<div class="air-gap-medium"></div>
-				<div id="projectsContainer"></div>
-			</section>
-			<!-- !SECTION projects -->
+				<section id="skills">
+					<h2 class="wrap-text">skills</h2>
+					<hr />
+					<div class="air-gap-small"></div>
+					<div id="skillsContainer" class="row"></div>
+				</section>
+				<!-- !SECTION skills -->
 
-			<!-- SECTION skills -->
-			<div class="air-gap-medium"></div>
-			<section id="skills">
-				<h2 class="wrap-text">skills</h2>
-				<hr />
-				<div class="air-gap-small"></div>
-				<div id="skillsContainer" class="row"></div>
-			</section>
-
-			<!-- !SECTION skills -->
-
-			<!-- SECTION contact -->
-			<div class="air-gap-medium"></div>
-			<section id="contact">
-				<h2 class="wrap-text">let's contact</h2>
-				<hr />
-				<div class="air-gap-small"></div>
-				<div class="container">
-					<div class="px-2">
-						<form class="row" id="contactForm">
-							<div class="col-12 col-lg-6">
-								<input
-									type="text"
-									class="form-control card contact-card px-2 py-3"
-									placeholder="Your email"
-									id="contactFormEmailInput"
-								/>
-								<div class="air-gap-small"></div>
-							</div>
-
-							<div class="col-12 col-lg-6">
-								<textarea
-									class="form-control card contact-card px-2 py-3 h-45"
-									placeholder="Write me a message"
-									id="contactFormMessageInput"
-								></textarea>
-
-								<div class="d-flex justify-content-end">
-									<button
-										role="button"
-										type="submit"
-										id="sendContactFormBtn"
-										class="btn btn-light card skill-card d-flex flex-row align-items-center px-2 my-4"
-									>
-										<div class="circle-3 px-3 bg-color-em2"></div>
-										<h3 class="card-text p-2 overflow-scroll">Send</h3>
-									</button>
+				<!-- SECTION contact -->
+				<div class="air-gap-medium"></div>
+				<section id="contact">
+					<h2 class="wrap-text">let's contact</h2>
+					<hr />
+					<div class="air-gap-small"></div>
+					<div class="container">
+						<div class="px-2">
+							<form class="row" id="contactForm">
+								<div class="col-12 col-lg-6">
+									<input
+										type="text"
+										class="form-control card contact-card px-2 py-3"
+										placeholder="Your email"
+										id="contactFormEmailInput"
+									/>
+									<div class="air-gap-small"></div>
 								</div>
-							</div>
-						</form>
+
+								<div class="col-12 col-lg-6">
+									<textarea
+										class="form-control card contact-card px-2 py-3 h-45"
+										placeholder="Write me a message"
+										id="contactFormMessageInput"
+									></textarea>
+
+									<div class="d-flex justify-content-end">
+										<button
+											role="button"
+											type="submit"
+											id="sendContactFormBtn"
+											class="btn card skill-card d-flex flex-row align-items-center px-2 my-4"
+										>
+											<div class="circle-3 px- bg-color-em2"></div>
+											<h4 class="card-text p-2 overflow-scroll">Send</h4>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
 					</div>
-				</div>
-			</section>
-			<!-- !SECTION contact -->
+				</section>
+				<!-- !SECTION contact -->
 
-			<!-- SECTION footer -->
-			<div class="air-gap-medium"></div>
-			<section id="contact">
-				<h2 class="wrap-text">Social</h2>
-				<hr />
-				<div class="air-gap-medium"></div>
+				<!-- SECTION social-networks -->
+				<div class="air-gap-small"></div>
+				<section id="social-networks">
+					<h2 class="wrap-text">Social</h2>
+					<hr />
+					<div class="air-gap-medium"></div>
 
-				<div class="d-flex w-75 flex-wrap justify-content-around m-auto gap-5">
-					<a
-						href="https://github.com/armincano/"
-						target="_blank"
-						class="rrss-link"
-						><img
-							src="./assets/icons/github.svg"
-							class="footer-img"
-							alt="github"
-					/></a>
-					<a
-						href="https://www.linkedin.com/in/armincano/"
-						target="_blank"
-						class="rrss-link"
-						><img
-							src="./assets/icons/linkedin.svg"
-							class="footer-img"
-							alt="linkedin"
-					/></a>
-					<a
-						href="mailto:arminescano@gmail.com"
-						target="_blank"
-						class="rrss-link"
+					<div
+						class="d-flex w-75 flex-wrap justify-content-around m-auto gap-5"
 					>
-						<img
-							src="./assets/icons/email.svg"
-							class="footer-img"
-							alt="email"
-						/>
-					</a>
-				</div>
-				<div class="air-gap-medium"></div>
-				<p class="text-center">
-					Created with ❤️<br />in Villarrica, Chile | August, 2024
+						<a
+							href="https://github.com/armincano/"
+							target="_blank"
+							class="rrss-link"
+							><img
+								src="./assets/icons/github.svg"
+								class="footer-img"
+								alt="github"
+						/></a>
+						<a
+							href="https://www.linkedin.com/in/armincano/"
+							target="_blank"
+							class="rrss-link"
+							><img
+								src="./assets/icons/linkedin.svg"
+								class="footer-img"
+								alt="linkedin"
+						/></a>
+						<a
+							href="mailto:arminescano@gmail.com"
+							target="_blank"
+							class="rrss-link"
+						>
+							<img
+								src="./assets/icons/email.svg"
+								class="footer-img"
+								alt="email"
+							/>
+						</a>
+					</div>
+				</section>
+				<!-- !SECTION social-networks -->
+			</main>
+			
+			<!-- SECTION footer -->
+			<div class="air-gap-large"></div>
+			<footer id="footer" class="text-center">
+				<p>
+					Created with ❤️ in Villarrica, Chile<br />© August, 2024 Armin Cano
 				</p>
-			</section>
+				<div class="air-gap-small"></div>
+			</footer>
 			<!-- !SECTION footer -->
-
-			<div class="air-gap-small"></div>
 		</div>
 		<!-- !SECTION Body -->
 

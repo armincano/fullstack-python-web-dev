@@ -88,8 +88,8 @@ $(document).ready(function () {
 					: domain.domain === "tools"
 					? "bg-color-em4"
 					: "";
-			const skillTab = `<div class="card skill-card d-flex flex-row align-items-center my-3">
-					<div class="circle-3 p-3 ms-1 ${bgColor}"></div>
+			const skillTab = `<div class="card skill-card d-flex flex-row align-items-center my-3 pe-1">
+					<div class="circle-3 m-1 ${bgColor}"></div>
 					<h4 class="card-text p-2">${domain.skills[key]}</h4>
 				</div>`;
 			newDiv.append(skillTab);
@@ -140,6 +140,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 	const images = $(".project-card-img");
+	const skills = $("#skillsContainer");
 
 	const observer = new IntersectionObserver(
 		(entries, observer) => {
@@ -156,4 +157,8 @@ $(document).ready(function () {
 	images.each(function () {
 		observer.observe(this);
 	});
+
+	observer.observe(skills[0]);
+
+	
 });
