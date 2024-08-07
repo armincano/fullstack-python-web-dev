@@ -29,8 +29,8 @@ const projectsObj = [
 ];
 
 $(document).ready(function () {
-	// ANCHOR - Projects populating
 
+	// ANCHOR - Projects populating
 	const projectsContainer = $("#projectsContainer");
 	projectsObj.forEach((project, idx) => {
 		const projectStructureItem = `
@@ -76,7 +76,7 @@ $(document).ready(function () {
 	// ANCHOR - Skills populating
 	const skillsContainer = $("#skillsContainer");
 	skillsObj.forEach((domain) => {
-		const newDiv = $("<div class='col-12 col-lg-6'></div>")
+		const newDiv = $("<div class='col-12 col-lg-6 skills-tabs'></div>")
 		for (const key in domain.skills) {
 			const bgColor =
 				domain.domain === "frontend"
@@ -89,7 +89,7 @@ $(document).ready(function () {
 					? "bg-color-em4"
 					: "";
 			const skillTab = `<div class="card skill-card d-flex flex-row align-items-center my-3 pe-1">
-					<div class="circle-3 m-1 ${bgColor}"></div>
+					<div class="circle-3 m-1 p-4 ${bgColor}"></div>
 					<h4 class="card-text p-2">${domain.skills[key]}</h4>
 				</div>`;
 			newDiv.append(skillTab);
@@ -140,7 +140,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 	const images = $(".project-card-img");
-	const skills = $("#skillsContainer");
+	const skills = $(".skills-tabs");
 
 	const observer = new IntersectionObserver(
 		(entries, observer) => {
@@ -158,7 +158,9 @@ $(document).ready(function () {
 		observer.observe(this);
 	});
 
-	observer.observe(skills[0]);
+	skills.each(function () {
+		observer.observe(this);
+	});
 
 	
 });

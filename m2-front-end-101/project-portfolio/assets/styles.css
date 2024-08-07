@@ -79,14 +79,14 @@ hr {
 }
 
 .btn:hover {
-    background-color: var(--hover-bg-color);
+	background-color: var(--hover-bg-color);
 }
 
 h1 {
 	font-family: "Causten Round";
 	font-size: 4.6rem;
 	color: var(--primary-color);
-	line-height:4.5rem;
+	line-height: 4.5rem;
 	white-space: wrap;
 }
 
@@ -197,7 +197,7 @@ span {
 	background-color: var(--em4-color);
 }
 
-.custom-btn{
+.custom-btn {
 	overflow: scroll;
 }
 
@@ -249,8 +249,6 @@ span {
 }
 
 .circle-3 {
-	width: 50px;
-	height: 50px;
 	clip-path: circle();
 	position: relative; /* Add this */
 }
@@ -266,7 +264,6 @@ span {
 	border-radius: 50%; /* Make it circular */
 	box-sizing: border-box; /* Ensure the border is included in the size */
 }
-
 /* !SECTION Skills */
 
 /* SECTION Contact */
@@ -286,7 +283,7 @@ span {
 /* !SECTION Contact */
 
 /* SECTION Footer */
-.footer-img{
+.footer-img {
 	width: 75px;
 	height: 75px;
 }
@@ -295,81 +292,80 @@ span {
 /* SECTION Animations */
 @keyframes zoomIn {
 	from {
-	  transform: scale(0.5);
+		transform: scale(0.5);
 	}
 	to {
-	  transform: scale(1);
+		transform: scale(1);
 	}
-  }
+}
 
-  @keyframes zoomInOut {
-	0%, 100% {
-	  transform: scale(1);
+@keyframes zoomInOut {
+	0%,
+	100% {
+		transform: scale(1);
 	}
 	50% {
-	  transform: scale(1.1);
+		transform: scale(1.1);
 	}
-  }
+}
 
-  @keyframes moveUpDown {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
+@keyframes moveUpDown {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
 
-  @keyframes scaleRotate {
+@keyframes scaleRotate {
 	0% {
-		opacity: 0;
-	  transform: scale(1.5) rotate(10deg);
+		transform: scale(1.5) rotate(10deg);
 	}
 	100% {
-		opacity: 1;
 		transform: scale(1) rotate(0deg);
-	  }
-  }
-  
-  .avatar {
-    animation: moveUpDown 2s infinite;
-  }
+	}
+}
 
-  .project-card-img {
+.avatar {
+	animation: moveUpDown 2s infinite;
+}
+
+.project-card-img {
 	opacity: 0;
 	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-  }
-  
-  .project-card-img.in-view {
+}
+
+.project-card-img.in-view {
 	animation: zoomIn 0.5s forwards;
 	opacity: 1;
-  }
+}
 
-  .project-link {
+.project-link {
 	animation: zoomInOut 5s infinite;
 	transform-origin: left;
-  }
+}
 
-  #skillsContainer {
+.skills-tabs {
 	opacity: 0;
-  }
+}
 
-  #skillsContainer.in-view {
+.skills-tabs.in-view {
+	animation: scaleRotate 1s;
 	opacity: 1;
-	animation: scaleRotate 1s ease-in;
-  }
+}
 
-  .rrss-link {
+.rrss-link {
 	transition: transform 0.3s ease-in-out;
-  }
-  
-  .rrss-link:hover {
+}
+
+.rrss-link:hover {
 	transform: scale(1.4);
-  }
+}
 
-  #sendContactFormBtn{
+#sendContactFormBtn {
 	animation: zoomInOut 5s infinite;
-  }
-
+}
 
 /* !SECTION Animations */
