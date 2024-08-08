@@ -1,6 +1,6 @@
 # Challenges and Assignments from a Python Bootcamp Student
 
-## 👉 [LIVE DEMO](https://armincano.github.io/fullstack-python-web-dev/)
+## 👩‍💻 [Live demo](https://armincano.github.io/fullstack-python-web-dev/) | Spent time ⏰ [![wakatime](https://wakatime.com/badge/user/15c9fde4-15a8-42b3-b061-6262f1298bae/project/1503f26a-4b2d-47d9-9bc9-475cc8d95686.svg)](https://wakatime.com/badge/user/15c9fde4-15a8-42b3-b061-6262f1298bae/project/1503f26a-4b2d-47d9-9bc9-475cc8d95686)
 
 ## Module 03: Python 101
 

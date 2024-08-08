@@ -43,7 +43,6 @@ def calc_operations(num1, num2):
     try:
         division = divide(num1, num2)
     except ValueError as e:
-        print(f"Error: {e}")
         division = None
     results = (addition, subtraction, multiplication, division)
     return results
@@ -61,7 +60,17 @@ def calc_results_to_dict(*calc_results):
         results_dict.update({operations_keys[count]: value})
     return results_dict
 
+def input_number(number_name):
+    while True:
+        try:
+            number = float(input(f"Enter your {number_name} number: "))
+            return number
+        except ValueError:
+            print("Invalid number. Please try again.")
 
-results = calc_operations(4, 2)
+calc_input_1 = input_number("first")
+calc_input_2 = input_number("second")
+
+results = calc_operations(calc_input_1, calc_input_2)
 results_dict = calc_results_to_dict(*results)
 print(results_dict)
