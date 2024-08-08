@@ -9,6 +9,8 @@
 
 ### Final project: ?
 
+### [Functions 🔂](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m3-python-101/functions.ipynb)
+
 ### [Conditional statements ↪️](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m3-python-101/conditional_statements_notebook.ipynb)
 
 ### [Iterative statements 🔃](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m3-python-101/iterative_statements_notebook.ipynb)
