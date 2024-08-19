@@ -2,12 +2,19 @@
 
 ## 👩‍💻 [Live demo](https://armincano.github.io/fullstack-python-web-dev/) | Spent time ⏰ [![wakatime](https://wakatime.com/badge/user/15c9fde4-15a8-42b3-b061-6262f1298bae/project/1503f26a-4b2d-47d9-9bc9-475cc8d95686.svg)](https://wakatime.com/badge/user/15c9fde4-15a8-42b3-b061-6262f1298bae/project/1503f26a-4b2d-47d9-9bc9-475cc8d95686)
 
-## Module 03: Python 101
+## Module 04: Python + OOP
 
 ![Python badge](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 ![Jupyter badge](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white)
 
-### Final project: ?
+### [Applying object-oriented programming in Python. 🗺️Animal>🐍🦆🦢](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m4-python-oop/oop-in-python.ipynb)
+
+### [@property decorator, the Python way for Getters and Setters 🔐](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m4-python-oop/property_decorator.ipynb)
+
+## Module 03: Python 101
+
+![Python badge](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
+![Jupyter badge](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white)
 
 ### [Functions 🔂](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m3-python-101/functions.ipynb)
 
