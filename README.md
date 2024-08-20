@@ -22,6 +22,8 @@
 
 ### [Iterative statements 🔃](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m3-python-101/iterative_statements_notebook.ipynb)
 
+### [Handling exceptions 💥🤯](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m3-python-101/handling_exceptions.ipynb)
+
 ### [Libraries 📚](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m3-python-101/libraries_notebook.ipynb)
 
 ## Module 02: Front-end 101
