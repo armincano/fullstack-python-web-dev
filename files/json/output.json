@@ -1,0 +1,40 @@
+{
+    "people": [
+        {
+            "name": "Steve Jobs",
+            "role": "Co-founder and former CEO"
+        },
+        {
+            "name": "Tim Cook",
+            "role": "CEO"
+        },
+        {
+            "name": "Jony Ive",
+            "role": "Chief Design Officer"
+        },
+        {
+            "name": "Phil Schiller",
+            "role": "Senior Vice President of Worldwide Marketing"
+        },
+        {
+            "name": "Angela Ahrendts",
+            "role": "Senior Vice President of Retail"
+        },
+        {
+            "name": "Craig Federighi",
+            "role": "Senior Vice President of Software Engineering"
+        },
+        {
+            "name": "Eddy Cue",
+            "role": "Senior Vice President of Services"
+        },
+        {
+            "name": "Lisa Jackson",
+            "role": "Vice President of Environment, Policy and Social Initiatives"
+        },
+        {
+            "name": "Jeff Williams",
+            "role": "Chief Operating Officer"
+        }
+    ]
+}

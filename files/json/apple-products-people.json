@@ -1,0 +1,306 @@
+{
+	"people": [
+		{
+			"name": "Steve Jobs",
+			"role": "Co-founder and former CEO",
+			"yearsActive": "1976-1985, 1997-2011",
+			"contributions": [
+				"Introduced Macintosh",
+				"Pioneered iPod, iPhone, and iPad"
+			]
+		},
+		{
+			"name": "Tim Cook",
+			"role": "CEO",
+			"yearsActive": "1998-present",
+			"contributions": [
+				"Expanded global operations",
+				"Led Apple into new markets like services and wearables"
+			]
+		},
+		{
+			"name": "Jony Ive",
+			"role": "Chief Design Officer",
+			"yearsActive": "1992-2019",
+			"contributions": [
+				"Designed iMac, iPod, iPhone, and Apple Watch",
+				"Influenced Apple’s minimalist aesthetic"
+			]
+		},
+		{
+			"name": "Phil Schiller",
+			"role": "Senior Vice President of Worldwide Marketing",
+			"yearsActive": "1987-2020",
+			"contributions": [
+				"Led product marketing and advertising",
+				"Instrumental in launching iPhone and iPad"
+			]
+		},
+		{
+			"name": "Angela Ahrendts",
+			"role": "Senior Vice President of Retail",
+			"yearsActive": "2014-2019",
+			"contributions": [
+				"Revamped Apple Store experience",
+				"Expanded Apple’s retail presence worldwide"
+			]
+		},
+		{
+			"name": "Craig Federighi",
+			"role": "Senior Vice President of Software Engineering",
+			"yearsActive": "2009-present",
+			"contributions": [
+				"Led development of iOS and macOS",
+				"Introduced new software features like FaceTime, iCloud, and Siri"
+			]
+		},
+		{
+			"name": "Eddy Cue",
+			"role": "Senior Vice President of Services",
+			"yearsActive": "1989-present",
+			"contributions": [
+				"Led iTunes and Apple Music",
+				"Oversaw the growth of Apple’s services division including Apple TV+, Apple Arcade, and Apple News+"
+			]
+		},
+		{
+			"name": "Lisa Jackson",
+			"role": "Vice President of Environment, Policy and Social Initiatives",
+			"yearsActive": "2013-present",
+			"contributions": [
+				"Led environmental and renewable energy initiatives",
+				"Advocated for privacy and social justice"
+			]
+		},
+		{
+			"name": "Jeff Williams",
+			"role": "Chief Operating Officer",
+			"yearsActive": "1998-present",
+			"contributions": [
+				"Led Apple Watch development",
+				"Oversees operations, supply chain, and customer support"
+			]
+		}
+	],
+	"products": [
+		{
+			"name": "Apple II",
+			"releaseDate": "1977-04-10",
+			"category": "Personal Computer",
+			"features": [
+				"First commercially successful personal computer from Apple."
+			],
+			"impact": "Popularized personal computing in homes and schools.",
+			"image": "https://www.example.com/apple_ii.jpg"
+		},
+		{
+			"name": "Macintosh",
+			"releaseDate": "1984-01-24",
+			"category": "Personal Computer",
+			"features": ["Introduced the graphical user interface (GUI)."],
+			"impact": "Revolutionized the personal computing industry.",
+			"image": "https://www.example.com/macintosh.jpg"
+		},
+		{
+			"name": "iPhone",
+			"releaseDate": "2007-01-09",
+			"category": "Smartphone",
+			"features": [
+				"Combined phone, music player, camera, and internet in one device."
+			],
+			"impact": "Revolutionized the mobile phone industry.",
+			"models": [
+				"iPhone (Original)",
+				"iPhone 3G",
+				"iPhone 3GS",
+				"iPhone 4",
+				"iPhone 4S",
+				"iPhone 5",
+				"iPhone 5C",
+				"iPhone 5S",
+				"iPhone 6",
+				"iPhone 6 Plus",
+				"iPhone 6S",
+				"iPhone 6S Plus",
+				"iPhone SE (1st generation)",
+				"iPhone 7",
+				"iPhone 7 Plus",
+				"iPhone 8",
+				"iPhone 8 Plus",
+				"iPhone X",
+				"iPhone XS",
+				"iPhone XS Max",
+				"iPhone XR",
+				"iPhone 11",
+				"iPhone 11 Pro",
+				"iPhone 11 Pro Max",
+				"iPhone SE (2nd generation)",
+				"iPhone 12",
+				"iPhone 12 mini",
+				"iPhone 12 Pro",
+				"iPhone 12 Pro Max",
+				"iPhone 13",
+				"iPhone 13 mini",
+				"iPhone 13 Pro",
+				"iPhone 13 Pro Max",
+				"iPhone SE (3rd generation)",
+				"iPhone 14",
+				"iPhone 14 Plus",
+				"iPhone 14 Pro",
+				"iPhone 14 Pro Max",
+				"iPhone 15",
+				"iPhone 15 Plus",
+				"iPhone 15 Pro",
+				"iPhone 15 Pro Max"
+			],
+			"image": "https://www.example.com/iphone.jpg"
+		},
+		{
+			"name": "iPad",
+			"releaseDate": "2010-04-03",
+			"category": "Tablet",
+			"features": ["Hybrid device between a smartphone and a laptop."],
+			"impact": "Created a new category of devices and popularized digital content consumption.",
+			"image": "https://www.example.com/ipad.jpg"
+		},
+		{
+			"name": "iPad Pro",
+			"releaseDate": "2016-03-31",
+			"category": "Tablet",
+			"features": [
+				"Large, high-resolution display, powerful processor, support for Apple Pencil"
+			],
+			"impact": "Defined the high-end tablet segment.",
+			"models": ["12.9 inches", "11 inches"],
+			"image": "https://www.example.com/ipad_pro.jpg"
+		},
+		{
+			"name": "Mac Pro",
+			"releaseDate": "1997-08-14",
+			"category": "Desktop Computer",
+			"features": ["Modular and expandable design", "Professional performance"],
+			"impact": "Set a new standard for professional desktop computers.",
+			"models": ["Tower", "Cheese grater"],
+			"image": "https://www.example.com/mac_pro.jpg"
+		},
+		{
+			"name": "iMac G3",
+			"releaseDate": "1998-08-15",
+			"category": "Personal Computer",
+			"features": [
+				"Transparent and colorful design",
+				"First iMac with integrated internet connectivity"
+			],
+			"impact": "Revitalized the Apple brand and popularized internet access at home.",
+			"models": ["Blue", "Clover", "Graphite", "Strawberry"],
+			"image": "https://www.example.com/imac_g3.jpg"
+		},
+		{
+			"name": "MacBook Air",
+			"releaseDate": "2008-01-15",
+			"category": "Laptop",
+			"features": [
+				"Extremely thin and lightweight",
+				"Long battery life",
+				"Retina display (introduced in 2018 models)",
+				"M1 and M2 chips (introduced in 2020 and 2022 models)"
+			],
+			"impact": "Defined the category of ultraportable laptops.",
+			"models": [
+				"11 inches (2008-2016)",
+				"13 inches (2008-present)",
+				"MacBook Air with Retina display (2018-present)",
+				"MacBook Air with M1 chip (2020)",
+				"MacBook Air with M2 chip (2022)"
+			],
+			"image": "https://www.example.com/macbook_air.jpg"
+		},
+		{
+			"name": "MacBook Pro",
+			"releaseDate": "2006-01-10",
+			"category": "Laptop",
+			"features": [
+				"High-performance laptop with professional-grade capabilities",
+				"Retina display (introduced in 2012 models)",
+				"Touch Bar (introduced in 2016 models)",
+				"M1 and M2 chips (introduced in 2020 and 2022 models)",
+				"Liquid Retina XDR display (introduced in 2021 models)"
+			],
+			"impact": "Set the standard for professional-grade laptops with high performance and advanced features.",
+			"models": [
+				"MacBook Pro (2006-2008)",
+				"MacBook Pro with Unibody (2008-2012)",
+				"MacBook Pro with Retina Display (2012-2015)",
+				"MacBook Pro with Touch Bar (2016-2020)",
+				"MacBook Pro with M1 chip (2020)",
+				"MacBook Pro with M1 Pro and M1 Max chips (2021)",
+				"MacBook Pro with M2 chip (2022)",
+				"MacBook Pro with M2 Pro and M2 Max chips (2023)"
+			],
+			"image": "https://www.example.com/macbook_pro.jpg"
+		},
+		{
+			"name": "iPod",
+			"releaseDate": "2001-10-23",
+			"category": "Music Player",
+			"features": ["Ability to store thousands of songs in a portable device."],
+			"impact": "Popularized digital music and laid the groundwork for the iPhone.",
+			"image": "https://www.example.com/ipod.jpg"
+		},
+		{
+			"name": "iPod Nano",
+			"releaseDate": "2005-09-07",
+			"category": "Music Player",
+			"features": ["Compact and colorful design", "Color display"],
+			"impact": "Made the iPod popular among younger audiences.",
+			"models": ["First generation", "Second generation"],
+			"image": "https://www.example.com/ipod_nano.jpg"
+		},
+		{
+			"name": "Apple Watch",
+			"releaseDate": "2015-04-24",
+			"category": "Smartwatch",
+			"features": ["Heart rate monitor, notifications, mobile payments"],
+			"impact": "Revolutionized the wearable tech industry.",
+			"models": ["Series 1", "Series 2"],
+			"image": "https://www.example.com/apple_watch.jpg"
+		},
+		{
+			"name": "AirPods",
+			"releaseDate": "2016-12-13",
+			"category": "Wireless Earbuds",
+			"features": [
+				"Ergonomic design, high-quality sound, instant wireless connection with Apple devices"
+			],
+			"impact": "Popularized true wireless earbuds.",
+			"models": [
+				"AirPods (1st generation)",
+				"AirPods (2nd generation)",
+				"AirPods Pro (1st generation)",
+				"AirPods Pro (2nd generation)",
+				"AirPods Max",
+				"AirPods (3rd generation)"
+			],
+			"image": "https://www.example.com/airpods.jpg"
+		},
+		{
+			"name": "Apple TV",
+			"releaseDate": "2007-02-09",
+			"category": "Media Player",
+			"features": ["Streaming of multimedia content to the TV"],
+			"impact": "Popularized content streaming in households.",
+			"models": ["First generation", "4K", "HD"],
+			"image": "https://www.example.com/apple_tv.jpg"
+		},
+		{
+			"name": "HomePod",
+			"releaseDate": "2018-02-09",
+			"category": "Smart Speaker",
+			"features": [
+				"High-quality sound, Siri voice assistant, smart home control"
+			],
+			"impact": "Competed with other smart speakers like Amazon Echo and Google Home.",
+			"image": "https://www.example.com/homepod.jpg"
+		}
+	]
+}
