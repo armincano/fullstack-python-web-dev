@@ -7,7 +7,9 @@
 ![Python badge](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 ![Jupyter badge](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white)
 
-### [Applying object-oriented programming in Python. 🗺️Animal>🐍🦆🦢](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m4-python-oop/oop-in-python.ipynb)
+### Module Project: [A control system to create instances and save them in a 'csv' file 🚙🏍️🚛](./m4-python-oop/car_toll_control_system/)
+
+### [Applying object-oriented programming in Python 🦆🦢🐓](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m4-python-oop/oop-in-python.ipynb)
 
 ### [@property decorator, the Python way for Getters and Setters 🔐](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m4-python-oop/property_decorator.ipynb)
 
@@ -34,7 +36,7 @@
 ![JavaScrip badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![jQuery badge](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
-### Final project: 🐍🤓 [Portfolio of a Python Webdev Student](./m2-front-end-101/project-portfolio/index.html)
+### Module project: 🐍🤓 [Portfolio of a Python Webdev Student](./m2-front-end-101/project-portfolio/index.html)
 
 ### HTML
 
