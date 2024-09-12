@@ -7,7 +7,7 @@
 ![Python badge](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 ![Jupyter badge](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white)
 
-### Module Project: [A control system to create instances and save them in a 'csv' file 🚙🏍️🚛](./m4-python-oop/car_toll_control_system/)
+### Module project: 🚙🏍️🚛 [A control system to create instances and save them in a 'csv' file](./m4-python-oop/car_toll_control_system/)
 
 ### [Applying object-oriented programming in Python 🦆🦢🐓](https://colab.research.google.com/github/armincano/fullstack-python-web-dev/blob/main/m4-python-oop/oop-in-python.ipynb)
 

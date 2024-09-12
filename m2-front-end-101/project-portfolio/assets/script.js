@@ -1,13 +1,13 @@
 const skillsObj = [
 	{
 		domain: "frontend",
-		skills: ["HTML - CSS", "Tailwind - Bootstrap", "jQuery - React.js"],
+		skills: ["HTML - CSS", "Tailwind", "Bootstrap", "jQuery", "React.js"],
 	},
 	{ domain: "backend", skills: ["Express.js", "PostgreSQL", "APIs"] },
-	{ domain: "languages", skills: ["JavaScript - Kotlin - Java"] },
+	{ domain: "languages", skills: ["JavaScript", "Python", "Kotlin", "Java"] },
 	{
 		domain: "tools",
-		skills: ["Git - GitHub", "SCRUM", "English C2 - Native Spanish"],
+		skills: ["Git", "GitHub", "Scrum", "English C2", "Native Spanish"],
 	},
 ];
 
@@ -29,7 +29,6 @@ const projectsObj = [
 ];
 
 $(document).ready(function () {
-
 	// ANCHOR - Projects populating
 	const projectsContainer = $("#projectsContainer");
 	projectsObj.forEach((project, idx) => {
@@ -76,7 +75,7 @@ $(document).ready(function () {
 	// ANCHOR - Skills populating
 	const skillsContainer = $("#skillsContainer");
 	skillsObj.forEach((domain) => {
-		const newDiv = $("<div class='col-12 col-lg-6 skills-tabs'></div>")
+		const newDiv = $("<div class='col-12 col-lg-6 skills-tabs'></div>");
 		for (const key in domain.skills) {
 			const bgColor =
 				domain.domain === "frontend"
@@ -161,6 +160,4 @@ $(document).ready(function () {
 	skills.each(function () {
 		observer.observe(this);
 	});
-
-	
 });

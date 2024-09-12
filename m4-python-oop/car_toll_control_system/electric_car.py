@@ -24,7 +24,6 @@ class ElectricCar(Vehicle):
     @property
     def speed(self):
         return self.__speed
-
     @speed.setter
     def speed(self, speed):
         self.__speed = speed
@@ -32,7 +31,6 @@ class ElectricCar(Vehicle):
     @property
     def motor_power(self):
         return self.__motor_power
-
     @motor_power.setter
     def motor_power(self, motor_power):
         self.__motor_power = motor_power
@@ -40,7 +38,6 @@ class ElectricCar(Vehicle):
     @property
     def range(self):
         return self.__range
-
     @range.setter
     def range(self, range):
         self.__range = range
@@ -48,7 +45,6 @@ class ElectricCar(Vehicle):
     @property
     def battery_capacity(self):
         return self.__battery_capacity
-
     @battery_capacity.setter
     def battery_capacity(self, battery_capacity):
         self.__battery_capacity = battery_capacity
