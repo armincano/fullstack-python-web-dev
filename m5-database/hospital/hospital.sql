@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS doctors (
     "doctor_id" SERIAL,
     "first_name" TEXT,
     "last_name" TEXT,
-    "specialty" VARCHAR(50),
+    "specialty" TEXT,
     PRIMARY KEY ("doctor_id")
 );
 CREATE TABLE IF NOT EXISTS appointments (
@@ -57,7 +57,9 @@ BEGIN;
 INSERT INTO patients ("first_name", "last_name", "date_of_birth", "physical_sex") VALUES
 ('Juan', 'Pérez', '1985-06-15', 'M'),
 ('Ana', 'Gómez', '1990-04-22', 'F'),
-('Carlos', 'Ruiz', '1978-11-30', 'M');
+('Carlos', 'Ruiz', '1978-11-30', 'M'),
+('Steve', 'Jobs', '1955-02-24', 'M'),
+('Ludwig', 'van Beethoven', '1770-09-17', 'M');
 INSERT INTO doctors ("first_name", "last_name", "specialty") VALUES
 ('Jorge', 'Kaplan', 'Cardiología'),
 ('Rick' ,'Sánchez', 'Pediatría'),
@@ -73,18 +75,62 @@ INSERT INTO treatments ("appointment_id", "description", "cost") VALUES
 END;
 
 --1 INNER JOIN Show all patients with their doctor's information and the treatment received:
+SELECT pa.first_name || ' ' || pa.last_name AS patient,
+tr.description,
+doc.first_name || ' ' || doc.last_name AS doctor
+FROM patients pa
+JOIN appointments ap ON pa.patient_id = ap.patient_id
+JOIN doctors doc ON ap.doctor_id = doc.doctor_id
+JOIN treatments tr ON ap.appointment_id = tr.appointment_id;
+
 --2 LEFT JOIN Show all patients and, if they have, the treatment received and the doctor's name:
+SELECT pa.first_name || ' ' || pa.last_name AS patient,
+tr.description,
+doc.first_name || ' ' || doc.last_name AS doctor
+FROM patients pa
+LEFT JOIN appointments ap ON pa.patient_id = ap.patient_id
+LEFT JOIN treatments tr ON ap.appointment_id = tr.appointment_id
+LEFT JOIN doctors doc ON ap.doctor_id = doc.doctor_id;
+
 --3 RIGHT JOIN Show all treatments and, if they exist, the patient's and doctor's information:
+SELECT tr.description,
+pa.first_name || ' ' || pa.last_name AS patient,
+doc.first_name || ' ' || doc.last_name AS doctor
+FROM treatments tr
+RIGHT JOIN appointments ap ON tr.appointment_id = ap.appointment_id
+RIGHT JOIN patients pa ON ap.patient_id = pa.patient_id
+RIGHT JOIN doctors doc ON ap.doctor_id = doc.doctor_id;
+
 --4 CROSS JOIN Show all possible combinations of patients and doctors:
+SELECT pa.first_name || ' ' || pa.last_name AS patient,
+doc.first_name || ' ' || doc.last_name AS doctor
+FROM patients pa
+CROSS JOIN doctors doc;
 
---5 UNION: Show all patient and doctor names (without duplicates):
---6 INTERSECT: Show the names that are in both the patients table and the doctors table (although in this case, we shouldn't have common names between patients and doctors):
---7 EXCEPT (equivalent to MINUS in PostgreSQL): Show the names of patients that are not in the doctors table (in this case, it should show all patients because we don't share names between the tables):
---8 EXTRACT: Show the patients whose birthday is in the same month as the current date:
+--5 UNION Show all patient and doctor names (without duplicates):
+SELECT first_name || ' ' || last_name AS "UNION: patients and doctors"
+FROM patients
+UNION
+SELECT first_name || ' ' || last_name
+FROM doctors;
 
---9 UNION: with Patient and Appointment Data
---Show all patient names and appointment IDs:
---10 INTERSECT: with Patient and Doctor Data
--- Show names that are found in both patients and doctors (we expect this to be empty if there are no common names):
---11 EXCEPT: with Patient and Treatment Data
---Show names of patients who do not have a registered treatment (this assumes that all patients with appointments have registered treatments, so it should be empty):
+--6 INTERSECT Show the names that are in both the patients table and the doctors table
+--(although in this case, we shouldn't have common names between patients and doctors):
+SELECT first_name || ' ' || last_name AS "INTERSECT: patients and doctors"
+FROM patients
+INTERSECT
+SELECT first_name || ' ' || last_name
+FROM doctors;
+
+--7 EXCEPT (equivalent to MINUS in PostgreSQL) Show the names of patients that are not in the doctors table
+--(in this case, it should show all patients because we don't share names between the tables):
+SELECT first_name || ' ' || last_name AS "EXCEPT: patients and doctors"
+FROM patients
+EXCEPT
+SELECT first_name || ' ' || last_name
+FROM doctors;
+
+--8 EXTRACT Show the patients whose birthday is in the same month as the current date:
+SELECT first_name || ' ' || last_name AS "patients whose birthday is this month"
+FROM patients
+WHERE EXTRACT(MONTH FROM date_of_birth) = EXTRACT(MONTH FROM CURRENT_DATE);

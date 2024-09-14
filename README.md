@@ -2,6 +2,10 @@
 
 ## 👩‍💻 [Live demo](https://armincano.github.io/fullstack-python-web-dev/) | Spent time ⏰ [![wakatime](https://wakatime.com/badge/user/15c9fde4-15a8-42b3-b061-6262f1298bae/project/1503f26a-4b2d-47d9-9bc9-475cc8d95686.svg)](https://wakatime.com/badge/user/15c9fde4-15a8-42b3-b061-6262f1298bae/project/1503f26a-4b2d-47d9-9bc9-475cc8d95686)
 
+## Module 05: DB design, SQL and PostgreSQL
+
+![PostgreSQL badge](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+
 ## Module 04: Python + OOP
 
 ![Python badge](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
