@@ -9,8 +9,8 @@ CREATE TABLE IF NOT EXISTS public.characters
     first_name text NOT NULL,
     last_name text,
     character_type_id integer NOT NULL,
-    description text NOT NULL,
     damage_stat integer,
+    description text NOT NULL,
     PRIMARY KEY (character_id)
 );
 

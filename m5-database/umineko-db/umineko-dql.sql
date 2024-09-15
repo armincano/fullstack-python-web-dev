@@ -72,8 +72,22 @@ SELECT character_id FROM arcs_characters
 WHERE arc_id = 3;
 
 --Classify the characters by their damage stat. using low(1-3), medium(4-7), high(8-9), ultra_high(10) categories.
+SELECT first_name, damage_stat,
+    CASE
+        WHEN damage_stat BETWEEN 1 AND 3 THEN 'low'
+        WHEN damage_stat BETWEEN 4 AND 7 THEN 'medium'
+        WHEN damage_stat BETWEEN 8 AND 9 THEN 'high'
+        ELSE 'ultra_high'
+    END AS damage_category
+FROM "characters"
+ORDER BY damage_stat DESC;
 
 --List the characters with the most common damage stat.
-
-
---https://thelawrenceq.medium.com/top-sql-queries-you-should-know-using-the-pok%C3%A9mon-dataset-ba76840dbc37
+SELECT * FROM "characters" ch
+WHERE ch.damage_stat = (
+    SELECT damage_stat
+    FROM "characters"
+    GROUP BY damage_stat
+    ORDER BY COUNT(*) DESC
+    LIMIT 1
+);
