@@ -1,6 +1,8 @@
-### git-sim and virtual env ###
-myenv/
+### git-sim# ##
 git-sim_media/
+
+### virtual env ###
+m6-django/1-project/myenv-1
 
 ### Django ###
 *.log

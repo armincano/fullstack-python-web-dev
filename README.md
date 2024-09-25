@@ -2,9 +2,22 @@
 
 ## 👩‍💻 [Live demo](https://armincano.github.io/fullstack-python-web-dev/) | Spent time ⏰ [![wakatime](https://wakatime.com/badge/user/15c9fde4-15a8-42b3-b061-6262f1298bae/project/1503f26a-4b2d-47d9-9bc9-475cc8d95686.svg)](https://wakatime.com/badge/user/15c9fde4-15a8-42b3-b061-6262f1298bae/project/1503f26a-4b2d-47d9-9bc9-475cc8d95686)
 
+## Module 06: Django
+
+![Django badge](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)
+
 ## Module 05: DB design, SQL and PostgreSQL
 
 ![PostgreSQL badge](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+
+### Umineko no naku koro ni characters and participation DB
+
+| ERD | Relational schema |
+|--------|-------------|
+|![ERD](./m5-database/umineko-db/umineko-erd.png)|![Relational schema](./m5-database/umineko-db/umineko-relational-schema.png)|
+|[DDL - Implementing the structure](./m5-database/umineko-db/umineko-ddl.sql)|[DML - Populating using a CSV](./m5-database/umineko-db/umineko-dml.sql)|
+|Classify the characters by their damage stat 👇👇👇![classify query](./m5-database/umineko-db/classify.png)|Subquery: List the characters with the most common damage stat 👇👇👇![subquery](./m5-database/umineko-db/subquery.png)|
+|Join 2 tables 👇👇👇![join](./m5-database/umineko-db/join.png)||
 
 ## Module 04: Python + OOP
 
