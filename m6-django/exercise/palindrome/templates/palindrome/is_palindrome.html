@@ -1,6 +1,9 @@
+{% extends "base.html" %}
+{% block page_content %}
 <h1>{{word}}</h1>
 {% if is_palindrome %}
     <h2>{{ word }} is a palindrome!</h2>
 {% else %}
     <h2>{{ word }} is not a palindrome.</h2>
 {% endif %}
+{% endblock page_content %}
