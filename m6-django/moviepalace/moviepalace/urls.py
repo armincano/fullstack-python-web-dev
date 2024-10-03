@@ -1,5 +1,5 @@
 """
-URL configuration for site1 project.
+URL configuration for moviepalace project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from moviefacts import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("citizen_kane/", views.citizen_kane),
+    path("casablanca/", views.casablanca),
+    path("maltese_falcon", views.maltese_falcon)
 ]

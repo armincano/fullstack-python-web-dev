@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block page_content %}
+<h1>List books</h1>
+<h2>Books with a price greater than 9.99</h2>
+<ul>
+{% for book in books %}
+{% if book.price > 9.99 %}
+    <li>{{ book.title }} by {{ book.author }} - ${{ book.price }}</li>
+{% endif %}
+{% endfor %}
+</ul>
+
+<hr>
+
+<h2>All books</h2>
+<ul>
+    {% for book in books %}
+      <li>{{ book.title }} by {{ book.author }} - ${{ book.price }}</li>
+    {% endfor %}
+</ul>
+{% endblock page_content %}

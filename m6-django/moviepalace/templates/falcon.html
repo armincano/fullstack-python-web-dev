@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block heading %}
+  {{block.super}}
+  <h2>The stuff that dreams are made of</h2>
+{% endblock heading %}
+
+{% block content %}
+  <p>
+    {% include "released_base.html" %}
+  </p>
+{% endblock content %}

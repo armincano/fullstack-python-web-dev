@@ -1,5 +1,3 @@
-{% extends "base.html" %}
-{% block page_content %}
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Django Exercises</a>
@@ -9,10 +7,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Libros</a>
+            <a class="nav-link" href="{% url 'palindrome' %}">Palindromos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'book' %}">Libros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'book_list' %}">Listar libros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Acerca de</a>
@@ -24,4 +28,3 @@
       </div>
     </div>
   </nav>
-{% endblock page_content %}
