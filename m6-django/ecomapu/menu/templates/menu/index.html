@@ -1,4 +1,18 @@
-{% extends "base.html" %}
-{% block page_content %}
+{% extends "base.html" %} {% block page_content %}
 <h1>Menús ☕️</h1>
+{% for item in menu_items %}
+<div class="card" style="width: 18rem">
+	<img src="{{ item.image.url }}" class="card-img-top" alt="{{ item.name }}" />
+	<div class="card-body">
+		<h5 class="card-title">{{ item.name }}</h5>
+        <p class="card-text">
+			${{ item.price }}
+		</p>
+		<p class="card-text">
+			{{ item.description }}
+		</p>
+		<a href="#" class="btn btn-primary">Más info</a>
+	</div>
+</div>
+{% endfor %}
 {% endblock page_content %}
