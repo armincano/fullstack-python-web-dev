@@ -1,0 +1,35 @@
+<!-- templates/psycho.html -->
+{% extends "base.html" %}
+
+{% block content %}
+  <p>
+    {{movie}} was released in {{year}}.  It was {% if not is_scary %}not
+    {% endif %}scary.
+  </p>
+
+  <p>
+    {% if color %}
+      Color
+    {% else %}
+      Black and white 
+    {% endif %}
+  </p>
+
+  <p>
+    {% if THX %}
+      Sound was awesome
+    {% endif %}
+  </p>
+
+  <p>
+    {% if tomato_meter > tomato_audience %}
+      Critics liked it better than audience
+    {% elif tomato_meter == tomato_audience %}
+      Critics liked it the same as audience
+    {% else %}
+      The audience liked it better than the critics
+    {% endif %}
+  </p>
+
+  <p>Copyright <b>MoviePalace</b></p>
+{% endblock content %}
