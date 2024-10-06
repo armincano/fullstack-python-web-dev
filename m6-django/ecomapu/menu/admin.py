@@ -1,3 +1,7 @@
 from django.contrib import admin
+from menu.models import MenuItem
 
-# Register your models here.
+class MenuItemAdmin(admin.ModelAdmin):
+    list_display = ['name', 'description', 'price', 'category', 'image']
+    search_fields = ['name']
+admin.site.register(MenuItem, MenuItemAdmin)
