@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Book
 
 def home(request):
     return render(request, "book/home.html")
@@ -16,3 +17,7 @@ def book_list(request):
         ]
     }
     return render(request, "book/book_list.html", context)
+
+def input_book(request):
+    context = {"books": Book.objects.all()}
+    return render(request, "book/input_book.html", context)

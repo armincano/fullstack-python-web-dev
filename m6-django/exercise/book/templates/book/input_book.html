@@ -1,0 +1,12 @@
+{% extends "home.html" %}
+{% block page_content %}
+<h1>Add a book to the Database</h1>
+<h2>Current books in the DB</h2>
+<ul>
+    {% for book in books %}
+    <li>{{ book.title }} by {{ book.author }} - ${{ book.price }}</li>
+    {% endfor %}
+</ul>
+<h2>Fill the form below</h2>
+
+{% endblock page_content %}
