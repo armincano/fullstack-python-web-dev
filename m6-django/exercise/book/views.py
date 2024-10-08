@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Book
+from .forms import BookForm
 
-def home(request):
+def book(request):
     return render(request, "book/home.html")
 
 def book_list(request):
@@ -19,5 +20,11 @@ def book_list(request):
     return render(request, "book/book_list.html", context)
 
 def input_book(request):
-    context = {"books": Book.objects.all()}
+    form = BookForm(request.POST or None)
+    if request.method == "POST":
+        form = BookForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect("book:input_book")
+    context = {"books": Book.objects.all(), "form": form}
     return render(request, "book/input_book.html", context)
