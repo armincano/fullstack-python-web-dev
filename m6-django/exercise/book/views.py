@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Book
 from .forms import BookForm
+from django.contrib.auth.decorators import login_required
 
 def book(request):
     return render(request, "book/home.html")
@@ -19,6 +20,7 @@ def book_list(request):
     }
     return render(request, "book/book_list.html", context)
 
+@login_required
 def input_book(request):
     form = BookForm(request.POST or None)
     if request.method == "POST":
