@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth.forms import UserCreationForm
+from .forms import CustomUserCreationForm
 import logging
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponse
@@ -17,13 +17,31 @@ def navbar(request):
 
 
 def signup(request):
-    form = UserCreationForm(request.POST or None)
+    form = CustomUserCreationForm(request.POST or None)
     if request.method == "POST":
-        form = UserCreationForm(request.POST)
+        form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect("login")
     context = {"form": form}
+
+    # Print the keys and attributes of the form fields
+    field_keys = form.fields.keys()
+    for key in field_keys:
+        print(f"Field: {key}")
+        field = form.fields[key]
+        widget = field.widget
+        print(f"  name: {key}")
+        print(f"  label: {field.label}")
+        print(f"Widget: {widget}")
+        # Print the id_for_label of the widget
+        print(f"  id_for_label: {widget.id_for_label(key)}")
+        
+        # Print each attribute of the widget
+        widget_attributes = widget.__dict__.items()
+        for attr_name, attr_value in widget_attributes:
+            print(f"  {attr_name}: {attr_value}")
+            
     return render(request, "../templates/signup.html", context)
 
 
