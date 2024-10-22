@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import CustomUserCreationForm
 import logging
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse
 
 logging.basicConfig(level=logging.DEBUG)
@@ -58,3 +58,9 @@ def user_login(request):
         else:
             return HttpResponse("Invalid username or password")
     return render(request, "../templates/login.html")
+
+def user_logout(request):
+    if request.method == "POST":
+        logout(request)
+        return redirect("home")
+    return render(request, "../templates/logout.html")
