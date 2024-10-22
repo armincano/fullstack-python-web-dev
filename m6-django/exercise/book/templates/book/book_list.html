@@ -1,6 +1,28 @@
 {% extends "base.html" %}
 {% block page_content %}
-<h1>List books</h1>
+<h1>Books list</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <th scope="col">Rating</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for book in books %}
+    <tr>
+      <td>{{ book.title }}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.rating }}</td>
+      <td>{{ book.price }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
 <h2>Books with a price greater than 9.99</h2>
 <ul>
 {% for book in books %}
@@ -10,12 +32,4 @@
 {% endfor %}
 </ul>
 
-<hr>
-
-<h2>All books</h2>
-<ul>
-    {% for book in books %}
-      <li>{{ book.title }} by {{ book.author }} - ${{ book.price }}</li>
-    {% endfor %}
-</ul>
 {% endblock page_content %}

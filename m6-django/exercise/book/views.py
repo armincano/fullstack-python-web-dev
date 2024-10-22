@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 def book(request):
     return render(request, "book/home.html")
 
-def book_list(request):
+def manual_book_list(request):
     context = {
         "books": [
             {"title": "To Kill a Mockingbird", "author": "Harper Lee", "price": 10.99},
@@ -18,6 +18,10 @@ def book_list(request):
             {"title": "The Catcher in the Rye", "author": "J.D. Salinger", "price": 7.99},
         ]
     }
+    return render(request, "book/book_list.html", context)
+
+def book_list(request):
+    context = {"books": Book.objects.all()}
     return render(request, "book/book_list.html", context)
 
 @login_required

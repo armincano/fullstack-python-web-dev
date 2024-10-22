@@ -1,44 +1,51 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Django Exercises</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'palindrome' %}">Palindromos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'book:book' %}">Libros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'book:book_list' %}">Listar libros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'book:input_book' %}">Ingresar libros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Acerca de</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contactos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'login' %}">Login</a>
-          </li>
-          {% if user.is_authenticated %}
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-            </li>
-          {% endif %}
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'signup' %}">Registrar usuario</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#">Django Exercises</a>
+		<button
+			class="navbar-toggler"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
+		>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="{% url 'home' %}"
+						>Inicio</a
+					>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'palindrome' %}">Palindromos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'book:book_list' %}"
+						>Listar libros</a
+					>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'book:input_book' %}"
+						>Ingresar libros</a
+					>
+				</li>
+			</ul>
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'login' %}">Login</a>
+				</li>
+				{% if user.is_authenticated %}
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'logout' %}">Logout</a>
+				</li>
+				{% endif %}
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'signup' %}">Registrar usuario</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
