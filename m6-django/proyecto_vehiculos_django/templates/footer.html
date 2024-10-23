@@ -1,0 +1,50 @@
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+	<footer class="text-center text-lg-start">
+		<section class="">
+			<div class="container text-center text-md-start mt-5">
+				<div class="row mt-3">
+					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+						<h6 class="text-uppercase fw-bold">Descripción</h6>
+						<hr
+							class="mb-4 mt-0 d-inline-block mx-auto"
+							style="width: 60px; background-color: #7c4dff; height: 2px"
+						/>
+						<p>
+							Un sitio web muy genial para ver vehículos. ¡Disfrútalo!
+						</p>
+					</div>
+
+					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+						<!-- Links -->
+						<h6 class="text-uppercase fw-bold">Aplicaciones</h6>
+						<hr
+							class="mb-4 mt-0 d-inline-block mx-auto"
+							style="width: 60px; background-color: #7c4dff; height: 2px"
+						/>
+						<p>
+							<a href="{% url 'vehiculo:catalog' %}">Catálogo de vehículos</a>
+						</p>
+					</div>
+
+					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+						<!-- Links -->
+						<h6 class="text-uppercase fw-bold">Contacto</h6>
+						<hr
+							class="mb-4 mt-0 d-inline-block mx-auto"
+							style="width: 60px; background-color: #7c4dff; height: 2px"
+						/>
+						<p><i class="fas fa-home mr-3"></i> Villarrica, Chile</p>
+						<p><i class="fas fa-envelope mr-3"></i> arminescano@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+			© 2024 Copyright
+		</div>
+		<!-- Copyright -->
+	</footer>
+</div>
