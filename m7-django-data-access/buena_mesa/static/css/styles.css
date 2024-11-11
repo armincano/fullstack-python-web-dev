@@ -1,0 +1,110 @@
+/* SECTION Color Pallete */
+:root {
+	--primary-color: #6c1c03;
+	--secondary-color: #dddddd;
+	--bg1-color: #ffd056;
+	--bg2-color: #ffb72b;
+	--em1-color: #03e4ac;
+	--em2-color: #fe4d2b;
+	--em3-color: #f37eb2;
+	--em4-color: #4d55f5;
+	--primary-button-bg-color: #ffb72b;
+	--primary-button-border-color: #ffb72b;
+	--primary-button-hover-bg-color: #fe4d2b;
+	--primary-button-hover-border-color: #fe4d2b;
+	--success-color: #28a745;
+	--info-color: #17a2b8;
+	--warning-color: #ffc107;
+	--danger-color: #dc3545;
+}
+/* !SECTION Color Pallete */
+
+/* SECTION CSS variables for common values */
+:root {
+	--padding-small: 0.8rem;
+	--padding-large: 2rem;
+	--margin-small: 0.8rem;
+	--top-space-small: 4%;
+	--top-space-medium: 8%;
+	--top-space-large: 16%;
+}
+/* !SECTION CSS variables for common values */
+
+/* SECTION Structural */
+html {
+	box-sizing: border-box;
+	font-size: 18px;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0px;
+	color: var(--primary-color);
+	background-color: var(--bg1-color);
+}
+
+.navbar-toggler-icon{
+	font-size: 13px;
+}
+
+.vh-100-minus-navbar{
+	height: calc(100vh - 56px);
+}
+
+.btn-primary {
+    background-color: var(--primary-button-bg-color);
+    border-color: var(--primary-button-border-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-button-hover-bg-color);
+    border-color: var(--primary-button-hover-border-color);
+}
+
+.btn-primary:focus {
+	background-color: var(--primary-button-hover-bg-color);
+	border-color: var(--primary-button-hover-border-color);
+}
+
+.btn-primary:active {
+	background-color: var(--primary-button-hover-bg-color);
+	border-color: var(--primary-button-hover-border-color);
+}
+
+.btn-primary:active:focus {
+	background-color: var(--primary-button-hover-bg-color);
+	border-color: var(--primary-button-hover-border-color);
+}
+
+.btn-primary:active:hover {
+	background-color: var(--primary-button-hover-bg-color);
+	border-color: var(--primary-button-hover-border-color);
+}
+
+.card{
+	border: 5px solid var(--primary-color);
+	border-radius: 50px;
+}
+
+.card img {
+    border-top-left-radius: 46px;
+    border-top-right-radius: 46px;
+}
+
+.air-gap-small {
+	margin-top: var(--top-space-small);
+}
+
+.air-gap-medium {
+	margin-top: var(--top-space-medium);
+}
+
+.air-gap-large {
+	margin-top: var(--top-space-large);
+}
+/* !SECTION Structural */
