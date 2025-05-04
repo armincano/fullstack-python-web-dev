@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block page_content %}
+<header class="">
+	<div class="px-0 md-px-5">
+		<h1 class="display-3">Crear cliente ➕💁‍♂️</h1>
+	</div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post">
+                {% csrf_token %}
+                {{  crear_cliente_form.as_p }}
+                <button type="submit" class="btn btn-primary">Crear</button>
+            </form>
+        </div>
+    </div>
+{% endblock page_content %}

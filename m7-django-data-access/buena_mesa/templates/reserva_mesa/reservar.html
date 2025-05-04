@@ -1,0 +1,76 @@
+{% extends "base.html" %} {% block page_content %}
+<header class="">
+	<div class="px-0 md-px-5">
+		<h1 class="display-3">Reservar mesa 🍴</h1>
+	</div>
+</header>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+
+			{% if cliente %}
+			<div class="col-md-6">
+				<h2>Cliente</h2>
+				<p>{{ cliente.nombre }} {{ cliente.apellido }}</p>
+				<p>{{ cliente.telefono }}</p>
+				<p>{{ cliente.email }}</p>
+			</div>
+			<form method="post">
+				{% csrf_token %}
+				<div>
+                    <input type="hidden" name="cliente" required id="id_cliente" value="{{ cliente.id }}">
+				</div>
+
+				<div>
+					<label for="id_fecha">Fecha:</label>
+					<input type="date" name="fecha" required id="id_fecha" />
+				</div>
+
+				<div>
+					<label for="id_hora">Hora:</label>
+					<input type="time" name="hora" required id="id_hora" />
+				</div>
+
+				<div>
+					<label for="id_cantidad_personas">Cantidad personas:</label>
+					<input
+						type="number"
+						name="cantidad_personas"
+						required
+						id="id_cantidad_personas"
+					/>
+				</div>
+
+				<button type="submit" class="btn btn-primary">Buscar mesa</button>
+			</form>
+
+            {% elif reserva_form %}
+            <form method="post">
+                {% csrf_token %}
+                {{ reserva_form.as_p }}
+                <button type="submit" class="btn btn-primary">Reservar</button>
+            </form>
+
+			{% else %}
+
+			<form method="post">
+				{% csrf_token %}
+				<div class="mb-3">
+					<label for="rut" class="form-label">Rut</label>
+					<input
+						type="text"
+						class="form-control"
+						id="rut"
+						name="rut"
+						required
+						maxlength="10"
+					/>
+				</div>
+				<button type="submit" class="btn btn-primary">Buscar</button>
+			</form>
+
+			{% endif %}
+		</div>
+	</div>
+	{% endblock page_content %}
+</div>

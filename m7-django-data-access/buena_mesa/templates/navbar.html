@@ -10,16 +10,10 @@
             <a class="nav-link" href="{% url 'inicio' %}">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Baristas</a>
+            <a class="nav-link" href="{% url 'reserva_mesa:reservar' %}">Reservas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Cafés</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Reseñas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contactos</a>
+            <a class="nav-link" href="{% url 'reserva_mesa:crear_cliente' %}">Crear cliente</a>
           </li>
         </ul>
       </div>
